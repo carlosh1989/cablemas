@@ -81,6 +81,14 @@
       <h4 class="tituloBanner">Intalación de Router</h4>
       <p class="grey-text parrafoBanner">Da señal a todos tus dispositivos inalambricos</p>
     </div>
+    <div class="col s12 m12 l1"><br/><i aria-hidden="true" class="iconoBanner fa fa-credit-card-alt fa-3x blue-text"></i></div>
+    <div class="col s12 m12 l11">
+      <h4 class="tituloBanner">Pagos Online</h4>
+      <p class="grey-text parrafoBanner">
+        Registra tus pagos desde la comodidad de tu casa
+        
+      </p>
+    </div>
   </div>
 </div>
 <div class="divider"></div>
