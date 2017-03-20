@@ -4,10 +4,12 @@
 <style type="text/css">
   .parallax-container
   	{
-  		height:320px;
+  		height:350px;
   	}
   .img-parallax1{
-  	width: 100%;
+      width: 100%;
+      height: auto;
+      max-width: 100%;
   }
   .titulo{
   	font-size: 1.3em;
@@ -31,10 +33,9 @@
     justify-content: center;
     align-items: center;
   }
+  
+  
 </style>
-<div class="parallax-container">
-  <div class="parallax z-depth-4"><img src="http://www.cablemas.com.ve/wp-content/uploads/Sin-t%C3%ADtulo-1-3600x1000_c.png" class="img-parallax1"/></div>
-</div>
 <div class="texto">
   <div class="row">
     <div class="col s12 m12 l3"><br/><i class="fa fa-user fa-2x icono"></i>
