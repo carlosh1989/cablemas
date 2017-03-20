@@ -1,1 +1,41 @@
-h1 title
+.row.login
+  .col.s6.offset-s3
+    .card-panel.z-depth-3
+      .row
+        .col.s12
+          form.form-horizontal(role='form', method='POST', action="{{ url('/login') }}")
+            | {{ csrf_field() }}
+            .(class="form-group{{ $errors->has('email') ? ' has-error' : '' }}")
+              label.col-md-4.control-label(for='email') E-Mail
+              .col-md-6
+                input#email.form-control(type='email', name='email', value="{{ old('email') }}", required='', autofocus='')
+                |                                 @if ($errors->has('email'))
+                span.help-block
+                  strong {{ $errors->first('email') }}
+                |                                 @endif
+            .(class="form-group{{ $errors->has('password') ? ' has-error' : '' }}")
+              label.col-md-4.control-label(for='password') Password
+              .col-md-6
+                input#password.form-control(type='password', name='password', required='')
+                |                                 @if ($errors->has('password'))
+                span.help-block
+                  strong {{ $errors->first('password') }}
+                |                                 @endif
+            //
+              <div class="form-group">
+              <div class="col-md-6 col-md-offset-4">
+              <div class="checkbox">
+              <label>
+              <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : ''}}> Remember Me
+              </label>
+              </div>
+              </div>
+              </div>
+            .form-group
+              .col-md-8.col-md-offset-4
+                button.btn.waves-effect.waves-light(type='submit')
+                  | Entrar
+                //
+                  <a class="btn waves-effect waves-light btn-link" href="{{ url('/password/reset') }}">
+                  Forgot Your Password?
+                  </a>

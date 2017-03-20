@@ -9,6 +9,7 @@
     "gulp": "^3.9.1",
     "gulp-jsbeautifier": "^2.0.3",
     "jquery": "^3.1.0",
+    "laravel-elixir-jade": "^0.2.4",
     "laravel-elixir": "^6.0.0-9",
     "laravel-elixir-browsersync-official": "^1.0.0",
     "laravel-elixir-vue-2": "^0.2.0",
@@ -19,5 +20,11 @@
   },
   "dependencies": {
     "particlesjs": "^2.0.1"
-  }
+  },
+  "name": "cablemas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:carlosh1989/cablemas.git",
+  "author": "carlos silva <elmorochez22@gmail.com>",
+  "license": "MIT"
 }

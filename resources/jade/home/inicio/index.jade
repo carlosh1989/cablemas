@@ -1,0 +1,123 @@
+@extends('layouts.home')
+@section('content')
+style(type='text/css').
+	.parallax-container
+		{
+			height:320px;
+		}
+	.img-parallax1{
+		width: 100%;
+	}
+	.titulo{
+		font-size: 1.3em;
+		text-shadow: 0px 1px 1px #444;
+		text-align: center;
+	}
+
+	p{
+		text-align: justify;
+		color:#777;
+	}
+
+	.parallax-contenedor
+	{
+		height:100px;
+	}
+
+	.icono{
+	  /*IMPORTANTE*/
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	}
+.parallax-container
+	.parallax.z-depth-4
+		img.img-parallax1(src='http://www.cablemas.com.ve/wp-content/uploads/Sin-t%C3%ADtulo-1-3600x1000_c.png')
+.texto
+	.row
+		.col.s12.m12.l3
+			br
+			i.fa.fa-user.fa-2x.icono
+			.titulo INTERNET RESIDENCIAL
+			.col.l10.offset-l1
+				p.
+					Acceso a Internet de Banda Ancha, dirigido al segmento de hogares, con acceso ilimitado a Internet
+		.col.s12.m12.l3
+			br
+			i.fa.fa-briefcase.fa-2x.icono
+			.titulo NTERNET COMERCIAL
+			.col.l10.offset-l1
+				p.
+					Acceso a Internet de Banda Ancha, dirigido al segmento de hogares, con acceso ilimitado a Internet
+		.col.s12.m12.l3
+			br
+			i.fa.fa-cloud.fa-2x.icono
+			.titulo INTERNET RESIDENCIAL
+			.col.l10.offset-l1
+				p.
+					Acceso a Internet de Banda Ancha, dirigido al segmento de hogares, con acceso ilimitado a Internet
+		.col.s12.m12.l3
+			br
+			i.fa.fa-wifi.fa-2x.icono
+			.titulo INTERNET RESIDENCIAL
+			.col.l10.offset-l1
+				p.
+					Acceso a Internet de Banda Ancha, dirigido al segmento de hogares, con acceso ilimitado a Internet
+
+.section.light-blue.darken-4
+	.row
+		.col.s12.m12.l3
+			br
+			.card
+				.card-image
+					img(src='http://www.cablemas.com.ve/wp-content/uploads/Nodos-Cablemas.png')
+				.card-content
+					h5.blue-text NODOS CABLEMAS
+					p.
+						Tecnología TDMA
+		.col.s12.m12.l3
+			br
+			.card
+				.card-image
+					img(src='http://www.cablemas.com.ve/wp-content/uploads/soporte-tecnico.png')
+				.card-content
+					h5.blue-text SOPORTE TECNICO
+					p.
+						Personal Años Experiencia
+		.col.s12.m12.l3
+			br
+			.card
+				.card-image
+					img(src='http://www.cablemas.com.ve/wp-content/uploads/Telefonia-IP.png')
+				.card-content
+					h5.blue-text TELEFONÍA IP
+					p.
+						Para Punto Ventas
+		.col.s12.m12.l3
+			br
+			.card
+				.card-image
+					img(src='http://www.cablemas.com.ve/wp-content/uploads/Pagos-Online.png')
+				.card-content
+					h5.blue-text PAGOS ONLINE
+					p.
+						Fácil Y Sencillo
+
+
+.texto
+	.row
+		.col.s12.m12.l6
+			br
+			img.img-parallax1(src="http://www.cablemas.com.ve/wp-content/uploads/CablemasLogo.png", alt="")
+		.col.s12.m12.l6
+			br
+			h4.blue-text Porque elegirnos?
+			.divider
+			p.
+				 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit laborum, molestiae eveniet ipsum natus ullam, explicabo autem laudantium magni porro minima dignissimos sequi vel. Incidunt ipsam accusamus modi error aliquam.
+
+.parallax-container.parallax-contenedor
+	.parallax
+		img(src='https://curiosoando.com/wp-content/uploads/2014/06/server_room.jpg')
+		
+@endsection

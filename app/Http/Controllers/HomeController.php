@@ -30,8 +30,18 @@ class HomeController extends Controller
             $panel = '/'.$request->user()->role;
             return redirect($panel);
         } else {
-            return view('home');
+            return view('home/inicio/index');
         }
+    }
+
+    public function login()
+    {
+        return view('home/inicio/login');
+    }
+
+    public function somos()
+    {
+        return view('home/inicio/somos');
     }
 
     public function logout()

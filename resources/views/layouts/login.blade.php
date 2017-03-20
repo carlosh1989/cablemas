@@ -130,7 +130,15 @@ body {
   text-align: left;
 }
 
+.nav-white a
+{
+  color: #444;
+}
 
+.lista
+{
+  color:#444;
+}
 
     </style>
 </head>
@@ -142,58 +150,26 @@ body {
   <script type='text/javascript' src='http://localhost/cablemas/public/bower/particleground/demo/js/demo.js'></script>
     <div id="app">
        
+
+
 <!-- Dropdown Structure -->
-<ul id="dropdown1" class="dropdown-content">
-  <li><a class="teal-text" href="{{ url('/logout') }}"><i class="fa fa-sign-out" aria-hidden="true"></i> Salir</a></li>
+<ul id="dropdown1" class="dropdown-content lista">
+  <li><a style="color:#444;" href="#!"><i class="fa fa-user-plus fa-1x"></i> One</a></li>
+  <li><a style="color:#444;" href="#!">two</a></li>
+  <li><a style="color:#444;" href="#!">three</a></li>
 </ul>
-<nav>
-  <div class="nav-wrapper teal">
-    <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
-    <a href="{{ url('/')}}" class="brand-logo"> </a>
+<nav class="white nav-white">
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo"><img src="http://www.cablemas.com.ve/wp-content/uploads/CablemasLogo.png" width="250px;" alt=""></a>
     <ul class="right hide-on-med-and-down">
-         @if (Auth::guest())
-            <li><a href="{{ url('/login') }}">Login</a></li>
-           <!-- <li><a href="{{ url('/register') }}">Register</a></li> -->
-         @else
+      <li><a href="sass.html">QUIENES SOMOS?</a></li>
+      <li><a href="badges.html">SERVICIOS</a></li>
       <!-- Dropdown Trigger -->
-      <li><a class="fa fa-search fa-2x" href="#" id="mostrarBusqueda"></a></li>
-      <li><a class="dropdown-button" href="#" data-activates="dropdown1"> {{ Auth::user()->email }}<i class="material-icons right">arrow_drop_down</i></a></li>
-         @endif
-    
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">SERVICIO AL CLIENTE<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="{{ url('/login') }}">Login</a></li>
     </ul>
   </div>
 </nav>
-    <ul id="slide-out" class="side-nav">
-      <li><a href="{{url('/admin')}}">Inicio <i class="fa fa-home fa-2x" aria-hidden="true"></i></a></li>
-      <li><a href="{{url('/admin/archivos/ingresar')}}">Ingresar archivo<i class="fa fa-plus-square fa-2x" aria-hidden="true"></i></a></li>
-      <li><a href="{{url('/admin/archivos/')}}">Archivos
-      <i class="fa fa-folder-open fa-2x" aria-hidden="true"></i></a></li>
-      <li><a href="{{url('/admin/publicaciones')}}">Publicaciones
-      <i class="fa fa-file-text fa-2x" aria-hidden="true"></i></i></a></li>
-      <li><a href="{{url('/admin/cuentas/ingresar')}}">Cuenta Ingresar
-      <i class="fa fa-user-plus fa-2x" aria-hidden="true"></i>
-</a></li>
-      <li><a href="{{url('/admin/chat')}}">Chat
-      <i aria-hidden="true" class="fa fa-commenting fa-2x"></i>
-</a></li>
- <li><a class="teal-text" href="{{ url('/logout') }}"><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i> Salir</a></li>
-    </ul>
-  
-
-  <nav style="display:none;background:#fff;color:#444;" id="busqueda">
-    <div class="nav-wrapper">
-      <form autocomplete="off" action="{{url('/admin/busquedaProcesar')}}" method="POST">
-       {{ csrf_field() }}
-        <div class="input-field">
-          <input name="search" id="search" type="search" placeholder="Que busca?" class="autocomplete" required>
-          <label for="search"><i class="material-icons">search</i></label>
-          <i id="closeSearch" class="material-icons">close</i>
-        </div>
-      </form>
-    </div>
-  </nav>
-
-
 
 
 <div id="particles">
@@ -244,6 +220,11 @@ body {
 $(document).ready(function(){
     $("#mostrarBusqueda").click(function(){
         $("#busqueda").toggle();
+    });
+
+    particleground(document.getElementById('particles'), {
+    dotColor: '#fff',
+    lineColor: '#fff'
     });
 });
 </script>

@@ -64,4 +64,6 @@ Route::group(['middlewareGroups' => 'web'], function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+Route::get('/somos', 'HomeController@somos');
+Route::get('/login','HomeController@login');
 Route::get('/logout', 'HomeController@logout');

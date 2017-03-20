@@ -71,6 +71,9 @@
     </ul>
   </div>
 </nav>
+
+
+
     <ul id="slide-out" class="side-nav">
       <li><a href="{{url('/admin')}}">Inicio <i class="fa fa-home fa-2x" aria-hidden="true"></i></a></li>
       <li><a href="{{url('/admin/archivos/ingresar')}}">Ingresar archivo<i class="fa fa-plus-square fa-2x" aria-hidden="true"></i></a></li>
