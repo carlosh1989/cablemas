@@ -34,29 +34,77 @@
     align-items: center;
   }
   
+  .imagenBanner{
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+  }
+  
+  .tituloBanner{
+  	font-family: 'Cantarell', sans-serif;
+  }
+  
+  .parrafoBanner{
+  	line-height: 0px;
+  	text-indent: 0.7em;
+  }
+  
+  @media (max-width: 600px) {
+  	.tituloBanner{
+  		font-family: 'Cantarell', sans-serif;
+  		text-align: center;
+  	}
+  	
+  	.parrafoBanner{
+  		line-height: 0px;
+  		text-indent: 0.7em;
+  		text-align: center;
+  	}
+  }
   
 </style>
+<div class="row">
+  <div class="col s12 m12 l6"><img src="https://s-media-cache-ak0.pinimg.com/564x/ed/1c/09/ed1c09272f9f8c9b209389a4b5314294.jpg" alt=""/></div>
+  <div class="col s12 m12 l6">
+    <div class="col s12 m12 l1"><br/><i aria-hidden="true" class="iconoBanner fa fa-fighter-jet fa-3x blue-text"></i></div>
+    <div class="col s12 m12 l11">
+      <h4 class="tituloBanner">Velocidad Garantizada</h4>
+      <p class="grey-text parrafoBanner">Navega y descargas a velocidades optimas</p>
+    </div>
+    <div class="col s12 m12 l1"><br/><i aria-hidden="true" class="iconoBanner fa fa-cloud-download fa-3x blue-text"></i></div>
+    <div class="col s12 m12 l11">
+      <h4 class="tituloBanner">Internet Ilimitado </h4>
+      <p class="grey-text parrafoBanner">Descarga todo lo que desees sin limitaciones</p>
+    </div>
+    <div class="col s12 m12 l1"><br/><i aria-hidden="true" class="iconoBanner fa fa-wifi fa-3x blue-text"></i></div>
+    <div class="col s12 m12 l11">
+      <h4 class="tituloBanner">Intalación de Router</h4>
+      <p class="grey-text parrafoBanner">Da señal a todos tus dispositivos inalambricos</p>
+    </div>
+  </div>
+</div>
+<div class="divider"></div>
 <div class="texto">
   <div class="row">
-    <div class="col s12 m12 l3"><br/><i class="fa fa-user fa-2x icono"></i>
+    <div class="col s12 m12 l3"><br/><i class="fa fa-user fa-2x icono blue-text"></i>
       <div class="titulo">INTERNET RESIDENCIAL</div>
       <div class="col l10 offset-l1">
         <p>Acceso a Internet de Banda Ancha, dirigido al segmento de hogares, con acceso ilimitado a Internet</p>
       </div>
     </div>
-    <div class="col s12 m12 l3"><br/><i class="fa fa-briefcase fa-2x icono"></i>
+    <div class="col s12 m12 l3"><br/><i class="fa fa-briefcase fa-2x icono blue-text"></i>
       <div class="titulo">NTERNET COMERCIAL</div>
       <div class="col l10 offset-l1">
         <p>Acceso a Internet de Banda Ancha, dirigido al segmento de hogares, con acceso ilimitado a Internet</p>
       </div>
     </div>
-    <div class="col s12 m12 l3"><br/><i class="fa fa-cloud fa-2x icono"></i>
+    <div class="col s12 m12 l3"><br/><i class="fa fa-cloud fa-2x icono blue-text"></i>
       <div class="titulo">INTERNET RESIDENCIAL</div>
       <div class="col l10 offset-l1">
         <p>Acceso a Internet de Banda Ancha, dirigido al segmento de hogares, con acceso ilimitado a Internet</p>
       </div>
     </div>
-    <div class="col s12 m12 l3"><br/><i class="fa fa-wifi fa-2x icono"></i>
+    <div class="col s12 m12 l3"><br/><i class="fa fa-wifi fa-2x icono blue-text"></i>
       <div class="titulo">INTERNET RESIDENCIAL</div>
       <div class="col l10 offset-l1">
         <p>
@@ -67,7 +115,7 @@
     </div>
   </div>
 </div>
-<div class="section light-blue darken-4">
+<div class="section grey darken-4">
   <div class="row">
     <div class="col s12 m12 l3"><br/>
       <div class="card">

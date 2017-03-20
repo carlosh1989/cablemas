@@ -32,40 +32,94 @@ style(type='text/css').
 	  justify-content: center;
 	  align-items: center;
 	}
+	
+	.imagenBanner{
+	    width: 100%;
+	    height: auto;
+	    max-width: 100%;
+	}
 
+	.tituloBanner{
+		font-family: 'Cantarell', sans-serif;
+	}
+	
+	.parrafoBanner{
+		line-height: 0px;
+		text-indent: 0.7em;
+	}
+
+	@media (max-width: 600px) {
+		.tituloBanner{
+			font-family: 'Cantarell', sans-serif;
+			text-align: center;
+		}
+		
+		.parrafoBanner{
+			line-height: 0px;
+			text-indent: 0.7em;
+			text-align: center;
+		}
+	}
+
+.row
+	.col.s12.m12.l6
+		img(src="https://s-media-cache-ak0.pinimg.com/564x/ed/1c/09/ed1c09272f9f8c9b209389a4b5314294.jpg", alt="")
+	.col.s12.m12.l6
+		.col.s12.m12.l1
+			br
+			i(aria-hidden="true").iconoBanner.fa.fa-fighter-jet.fa-3x.blue-text
+		.col.s12.m12.l11
+			h4.tituloBanner Velocidad Garantizada
+			p.grey-text.parrafoBanner.
+				Navega y descargas a velocidades optimas
+		.col.s12.m12.l1
+			br
+			i(aria-hidden="true").iconoBanner.fa.fa-cloud-download.fa-3x.blue-text
+		.col.s12.m12.l11
+			h4.tituloBanner Internet Ilimitado 
+			p.grey-text.parrafoBanner.
+				Descarga todo lo que desees sin limitaciones
+		.col.s12.m12.l1
+			br
+			i(aria-hidden="true").iconoBanner.fa.fa-wifi.fa-3x.blue-text
+		.col.s12.m12.l11
+			h4.tituloBanner Intalación de Router
+			p.grey-text.parrafoBanner.
+				Da señal a todos tus dispositivos inalambricos
+.divider
 
 .texto
 	.row
 		.col.s12.m12.l3
 			br
-			i.fa.fa-user.fa-2x.icono
+			i.fa.fa-user.fa-2x.icono.blue-text
 			.titulo INTERNET RESIDENCIAL
 			.col.l10.offset-l1
 				p.
 					Acceso a Internet de Banda Ancha, dirigido al segmento de hogares, con acceso ilimitado a Internet
 		.col.s12.m12.l3
 			br
-			i.fa.fa-briefcase.fa-2x.icono
+			i.fa.fa-briefcase.fa-2x.icono.blue-text
 			.titulo NTERNET COMERCIAL
 			.col.l10.offset-l1
 				p.
 					Acceso a Internet de Banda Ancha, dirigido al segmento de hogares, con acceso ilimitado a Internet
 		.col.s12.m12.l3
 			br
-			i.fa.fa-cloud.fa-2x.icono
+			i.fa.fa-cloud.fa-2x.icono.blue-text
 			.titulo INTERNET RESIDENCIAL
 			.col.l10.offset-l1
 				p.
 					Acceso a Internet de Banda Ancha, dirigido al segmento de hogares, con acceso ilimitado a Internet
 		.col.s12.m12.l3
 			br
-			i.fa.fa-wifi.fa-2x.icono
+			i.fa.fa-wifi.fa-2x.icono.blue-text
 			.titulo INTERNET RESIDENCIAL
 			.col.l10.offset-l1
 				p.
 					Acceso a Internet de Banda Ancha, dirigido al segmento de hogares, con acceso ilimitado a Internet
 
-.section.light-blue.darken-4
+.section.grey.darken-4
 	.row
 		.col.s12.m12.l3
 			br

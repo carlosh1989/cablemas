@@ -19,6 +19,8 @@
         <!-- Fonts -->
        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+
+        <link href="https://fonts.googleapis.com/css?family=Cantarell:700i" rel="stylesheet"> 
   <!-- <script src="{{url('bower/pusher.min/index.js')}}"></script>
  <script>
     // Enable pusher logging - don't include this in production
