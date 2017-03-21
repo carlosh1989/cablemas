@@ -13,8 +13,9 @@
   }
   .titulo{
   	font-size: 1.3em;
-  	text-shadow: 0px 1px 1px #444;
+  	text-shadow: 0px 1px 1px #777;
   	text-align: center;
+  	color:#555;
   }
   
   p{
@@ -42,6 +43,7 @@
   
   .tituloBanner{
   	font-family: 'Cantarell', sans-serif;
+  	color:#555;
   }
   
   .parrafoBanner{

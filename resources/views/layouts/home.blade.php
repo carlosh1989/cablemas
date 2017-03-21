@@ -19,8 +19,6 @@
         <!-- Fonts -->
        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-
-        <link href="https://fonts.googleapis.com/css?family=Cantarell:700i" rel="stylesheet"> 
   <!-- <script src="{{url('bower/pusher.min/index.js')}}"></script>
  <script>
     // Enable pusher logging - don't include this in production
@@ -44,8 +42,12 @@
       {
         z-index: 888;
       }
-
-
+#particles {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
 .login {
   position: absolute;
   left: 0;
@@ -54,23 +56,24 @@
   width: 100%;
   text-align: left;
 }
-
 .nav-white a
 {
   color: #444;
 }
-
 .lista
 {
   color:#444;
 }
-
-.dropdown-content.nested {
-   overflow-y: visible;
+.dropdown-content {
+  min-width: 0;
+  min-height: 0;
+  overflow: visible !important;
 }
 
-.dropdown-content .dropdown-content {
-   margin-left: 100%;
+.secondDropDown {
+  /*adjust by your needs*/
+  margin-left: 124px !important;
+  margin-top: -50px !important;
 }
     </style>
 </head>
@@ -80,6 +83,7 @@
 <script src="{{asset('/bower/materialize/dist/js/materialize.min.js')}}"></script>
 <script type='text/javascript' src="http://localhost/cablemas/public/bower/particleground/jquery.particleground.js"></script>
   <script type='text/javascript' src='http://localhost/cablemas/public/bower/particleground/demo/js/demo.js'></script>
+
     <div id="app">
        
 
@@ -91,11 +95,35 @@
  <li><a class='dropdown-button2 d' href='#' data-activates='dropdown2' data-hover="hover" data-alignment="left">PREGUNTAS FRECUENTES</a></li>
 </ul>
 
-<ul id="serviciosSubmenu" class="dropdown-content lista">
+
+<ul id="serviciosSubmenu1" class="dropdown-content lista">
+  <li><a href="#!"><i class="fa fa-user-plus fa-1x"></i> INTERNET RESIDENCIAL</a></li>
+  <li class="divider"></li>
+  <li><a href="#!"> INTERNET COMERCIAL</a></li>
+    <li><a style="color:#444;" href="#!"> INTERNET COMERCIAL</a></li>
+  <li class="divider"></li>
+  <li><a href="#!"> INTERNET DEDICADO</a></li>
+</ul>
+
+<ul id="serviciosClientesSubmenu2" class="dropdown-content lista">
   <li><a style="color:#444;" href="#!"><i class="fa fa-user-plus fa-1x"></i> REGISTRA TU PAGO</a></li>
   <li><a style="color:#444;" href="#!">SOLICITUD DE SERVICIO RESIDENCIAL</a></li>
   <li><a style="color:#444;" href="#!">PREGUNTAS FRECUENTES</a></li>
 </ul>
+
+  <!-- Dropdown Structure -->
+  <ul id='serviciosClientesSubmenu1' class='dropdown-content'>
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider"></li>
+    <li><a class="dropdown-button" href="#!" data-activates="secondDRP">three</a></li>
+  </ul>
+
+<ul id='secondDRP' class='dropdown-content secondDropDown'>
+    <li><a class="truncate" href="#!">Lorem ipsum dolor</a></li>
+    <li><a class="truncate" href="#!">Quisque tempus</a></li>
+    <li><a class="truncate" href="#!">Pellentesque</a></li>
+  </ul>
 
 <nav class="white nav-white">
   <div class="nav-wrapper">
@@ -103,9 +131,9 @@
     <a href="#!" class="brand-logo"><img src="http://www.cablemas.com.ve/wp-content/uploads/CablemasLogo.png" width="250px;" alt=""></a>
     <ul class="right hide-on-med-and-down">
       <li><a href="sass.html"><i class="fa fa-address-card-o"></i> QUIENES SOMOS?</a></li>
-       <li><a class='dropdown-button d' href='#' data-activates='dropdown4' data-hover="hover" data-alignment="left">SERVICIOS</a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="serviciosSubmenu1"><i class="fa fa-handshake-o"></i> SERVICIOS<i class="material-icons right">arrow_drop_down</i></a></li>
       <!-- Dropdown Trigger -->
-      <li><a class="dropdown-button" href="#!" data-activates="serviciosSubmenu"><i class="fa fa-handshake-o"></i> SERVICIO AL CLIENTE<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="serviciosClientesSubmenu1"><i class="fa fa-handshake-o"></i> SERVICIO AL CLIENTE<i class="material-icons right">arrow_drop_down</i></a></li>
       <li><a href="badges.html"><i class="fa fa-address-book"></i> CONTACTO</a></li>
       <li><a href="{{ url('/login') }}"><i class="fa fa-sign-in"></i> LOGIN</a></li>
     </ul>
@@ -120,31 +148,42 @@
     <li><a href="#!">three</a></li>
     <li><a class='dropdown-button2 d' href='#' data-activates='dropdown5' data-hover="hover" data-alignment="left">Drop Me!</a></li>
 </ul>
-<ul id='dropdown5' class='dropdown-content'>
-    <li><a href="#!">one</a></li>
-    <li><a href="#!">two</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">three</a></li>
+<!-- Dropdown Structure -->
+<ul id="dropdown5" class="dropdown-content lista">
+  <li><a style="color:#444;" href="#!"><i class="fa fa-user-plus fa-1x"></i> REGISTRA TU PAGO</a></li>
+  <li><a style="color:#444;" href="#!">SOLICITUD DE SERVICIO RESIDENCIAL</a></li>
+ <li><a class='dropdown-button2 d' href='#' data-activates='dropdown2' data-hover="hover" data-alignment="left">PREGUNTAS FRECUENTES</a></li>
 </ul>
 
 
   <ul id="slide-out" class="side-nav hide-on-med-and-up">
       <li><a href="sass.html"><i class="fa fa-address-card-o fa-2x"></i> QUIENES SOMOS?</a></li>
-      <li><a href="badges.html"><i class="fa fa-briefcase fa-2x"></i> SERVICIOS</a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown5"><i class="fa fa-handshake-o fa-2x"></i> SERVICIOS<i class="material-icons right">arrow_drop_down</i></a></li>
       <!-- Dropdown Trigger -->
       <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="fa fa-handshake-o fa-2x"></i> SERVICIO AL CLIENTE<i class="material-icons right">arrow_drop_down</i></a></li>
       <li><a href="badges.html"><i class="fa fa-address-book fa-2x"></i> CONTACTO</a></li>
       <li><a href="{{ url('/login') }}"><i class="fa fa-sign-in fa-2x"></i> LOGIN</a></li>
   </ul>
 
-        
+      
+<script>
+  $('.dropdown-button').dropdown({
+    inDuration: 300,
+    outDuration: 225,
+    constrain_width: true, // Does not change width of dropdown to that of the activator
+    hover: true, // Activate on hover
+    gutter: 0, // Spacing from edge
+    belowOrigin: true, // Displays dropdown below the button
+    alignment: 'left' // Displays dropdown with edge aligned to the left of button
+    }
+  );
+</script> 
 
   @yield('content')
 
  
  @include('sweet::alert')
  <script>
-
   // Initialize collapse button
   $(".button-collapse").sideNav();
   // Initialize collapsible (uncomment the line below if you use the dropdown variation)
@@ -164,7 +203,6 @@
       secondaryPlaceholder: '+Tag',
     });
     $('.chips').material_chip();
-
       
   }); // end of document ready
 })(jQuery); // end of jQuery name space
@@ -176,7 +214,10 @@ $(document).ready(function(){
     $("#mostrarBusqueda").click(function(){
         $("#busqueda").toggle();
     });
-
+    particleground(document.getElementById('particles'), {
+    dotColor: '#fff',
+    lineColor: '#fff'
+    });
 });
 </script>
 
