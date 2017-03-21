@@ -46,14 +46,6 @@
       }
 
 
-
-#particles {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: absolute;
-}
-
 .login {
   position: absolute;
   left: 0;
@@ -185,10 +177,6 @@ $(document).ready(function(){
         $("#busqueda").toggle();
     });
 
-    particleground(document.getElementById('particles'), {
-    dotColor: '#fff',
-    lineColor: '#fff'
-    });
 });
 </script>
 

@@ -62,6 +62,12 @@
   	}
   }
   
+  #particles {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+  }
+  
 </style>
 <div class="row">
   <div class="col s12 m12 l6"><img src="https://s-media-cache-ak0.pinimg.com/564x/ed/1c/09/ed1c09272f9f8c9b209389a4b5314294.jpg" alt=""/></div>
@@ -124,42 +130,46 @@
   </div>
 </div>
 <div class="section grey darken-4">
-  <div class="row">
+  <!--#particles(style="z-index:1")-->
+  <div class="row container">
     <div class="col s12 m12 l3"><br/>
-      <div class="card">
-        <div class="card-image"><img src="http://www.cablemas.com.ve/wp-content/uploads/Nodos-Cablemas.png"/></div>
+      <div style="z-index:2" class="card">
+        <div class="card-image"><br/><br/><img src="http://i582.photobucket.com/albums/ss266/otet_2009/Template/parabola-2.png"/></div><br/>
+        <div class="divider"></div>
         <div class="card-content">
-          <h5 class="blue-text">NODOS CABLEMAS</h5>
-          <p>Tecnología TDMA</p>
+          <h6 class="blue-text">NODOS CABLEMAS</h6>
+          <p class="grey-text">Tecnología TDMA</p>
         </div>
       </div>
     </div>
     <div class="col s12 m12 l3"><br/>
-      <div class="card">
-        <div class="card-image"><img src="http://www.cablemas.com.ve/wp-content/uploads/soporte-tecnico.png"/></div>
+      <div style="z-index:3" class="card">
+        <div class="card-image"><br/><br/><img src="http://www.freeiconspng.com/uploads/helpdesk-icon-33.png"/></div><br/>
+        <div class="divider"></div>
         <div class="card-content">
-          <h5 class="blue-text">SOPORTE TECNICO</h5>
-          <p>Personal Años Experiencia</p>
+          <h6 class="blue-text">SOPORTE TECNICO</h6>
+          <p class="grey-text">Personal Años Experiencia</p>
         </div>
       </div>
     </div>
     <div class="col s12 m12 l3"><br/>
-      <div class="card">
-        <div class="card-image"><img src="http://www.cablemas.com.ve/wp-content/uploads/Telefonia-IP.png"/></div>
+      <div style="z-index:4" class="card">
+        <div class="card-image"><br/><br/><img src="http://img.clubic.com/01592870-photo-logo-telephone-fax.jpg"/></div><br/>
+        <div class="divider"></div>
         <div class="card-content">
-          <h5 class="blue-text">TELEFONÍA IP</h5>
-          <p>Para Punto Ventas</p>
+          <h6 class="blue-text">TELEFONÍA IP</h6>
+          <p class="grey-text">Para Punto Ventas</p>
         </div>
       </div>
     </div>
     <div class="col s12 m12 l3"><br/>
-      <div class="card">
-        <div class="card-image"><img src="http://www.cablemas.com.ve/wp-content/uploads/Pagos-Online.png"/></div>
+      <div style="z-index:5" class="card">
+        <div class="card-image"><img src="https://conceptdraw.com/a3179c3/p14/preview/640/pict--credit-cards-sales-symbols---vector-stencils-library.png--diagram-flowchart-example.png" style="height:295px;"/></div>
+        <div class="divider"></div>
         <div class="card-content">
-          <h5 class="blue-text">PAGOS ONLINE</h5>
-          <p>
+          <h6 class="blue-text">PAGOS ONLINE</h6>
+          <p class="grey-text">
             Fácil Y Sencillo
-            
             
           </p>
         </div>
@@ -169,17 +179,25 @@
 </div>
 <div class="texto">
   <div class="row">
-    <div class="col s12 m12 l6"><br/><img src="http://www.cablemas.com.ve/wp-content/uploads/CablemasLogo.png" alt="" class="img-parallax1"/></div>
-    <div class="col s12 m12 l6"><br/>
-      <h4 class="blue-text">Porque elegirnos?</h4>
-      <div class="divider"></div>
-      <p>
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit laborum, molestiae eveniet ipsum natus ullam, explicabo autem laudantium magni porro minima dignissimos sequi vel. Incidunt ipsam accusamus modi error aliquam.
-        
-      </p>
+    <div class="col s12 m12 l12">
+      <div class="col s12 m12 l1"><br/><i aria-hidden="true" class="iconoBanner fa fa-question-circle fa-3x blue-text"></i></div>
+      <div class="col s12 m12 l6">
+        <h4 class="tituloBanner">Por qué elegirnos? </h4>
+        <p style="text-indent:0.7em;" class="grey-text">
+           Somos la primera Empresa Integradora de Telecomunicaciones en Venezuela en ofrecer Servicios de Internet Inalámbrico en la Barinas, con capital 100% Nacional, focalizado al mercado Residencial, Comercial y Empresarial, ofrecemos velocidades de acceso a Internet, según los requerimientos del cliente, en cualquier lugar, gracias a la utilización de tecnologías de última generación.
+          
+          Contamos con un equipo altamente capacitado para ofrecer un buen servicio en atención y rapidez, logrando ser una compañía que se adapte a las necesidades del consumidor.
+        </p>
+      </div>
+      <div class="col s12 m12 l3 offset-l1"><img src="http://3.bp.blogspot.com/-YFPIfvj7h0M/U6OD1EglnOI/AAAAAAAACdY/VEqw1DlqTy4/s1600/technology44-743413.png" style="height:300px;position:absolute;z-index:-1;" alt=""/></div>
     </div>
   </div>
 </div>
-<div class="parallax-container parallax-contenedor">
-  <div class="parallax"><img src="https://curiosoando.com/wp-content/uploads/2014/06/server_room.jpg"/></div>
-</div>@endsection
+<script type="text/javascript">
+  $(document).ready(function(){
+  particleground(document.getElementById('particles'), {
+  dotColor: '#555',
+  lineColor: '#444'
+  });
+  });
+</script>@endsection

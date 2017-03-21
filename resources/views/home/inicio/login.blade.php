@@ -37,6 +37,14 @@ body {
    */
 }
 
+    #particles {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: absolute;
+    }
+
+
 .login2
 {
 	top: 20%;;
@@ -172,4 +180,12 @@ body {
         </div>
     </div>
 </div>
+<script>
+$(document).ready(function(){
+    particleground(document.getElementById('particles'), {
+    dotColor: '#fff',
+    lineColor: '#fff'
+    });
+});
+</script>
 @endsection

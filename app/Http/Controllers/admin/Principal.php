@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\admin;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\SmsGateway;
+use Illuminate\Http\Request;
 
 class Principal extends Controller
 {
@@ -14,6 +15,18 @@ class Principal extends Controller
      */
     public function index()
     {
+/*        $smsGateway = new SmsGateway('elmorochez22@gmail.com', 'smsgateway');
+        $deviceID = 44084;
+        $number = '+584125207106';
+        $message = 'RE.CAR.LINE | El repuesto numero 0212165 ya se encuentra disponible en stock en Repuesto el Enano.';
+
+        $options = [
+            'expires_at' => strtotime('+1 hour') // Cancel the message in 1 hour if the message is not yet sent
+        ];
+
+        //Please note options is no required and can be left out
+        $result = $smsGateway->sendMessageToNumber($number, $message, $deviceID, $options); 
+        var_dump($result);*/
         return view('admin.principal.index');
     }
 
