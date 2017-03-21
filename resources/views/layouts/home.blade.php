@@ -96,7 +96,7 @@
 </ul>
 
 
-<ul id="serviciosSubmenu1" class="dropdown-content lista">
+<ul id="serviciosSubmenu1ASDSA" class="dropdown-content lista">
   <li><a href="#!"><i class="fa fa-user-plus fa-1x"></i> INTERNET RESIDENCIAL</a></li>
   <li class="divider"></li>
   <li><a href="#!"> INTERNET COMERCIAL</a></li>
@@ -111,19 +111,31 @@
   <li><a style="color:#444;" href="#!">PREGUNTAS FRECUENTES</a></li>
 </ul>
 
+
+
+
   <!-- Dropdown Structure -->
-  <ul id='serviciosClientesSubmenu1' class='dropdown-content'>
-    <li><a href="#!">one</a></li>
-    <li><a href="#!">two</a></li>
-    <li class="divider"></li>
-    <li><a class="dropdown-button" href="#!" data-activates="secondDRP">three</a></li>
+  <ul id='serviciosSubmenu1' class='dropdown-content'>
+    <li><a style="color:#444;" href="#!" href="#!">INTERNET RESIDENCIAL</a></li>
+    <li><a style="color:#444;" href="#!" class="dropdown-button" href="#!" data-activates="internetComercial">INTERNET COMERCIAL</a></li>
+    <li><a style="color:#444;" href="#!" class="dropdown-button" href="#!" data-activates="secondDRP">INTERNET DEDICADO</a></li>
   </ul>
 
-<ul id='secondDRP' class='dropdown-content secondDropDown'>
-    <li><a class="truncate" href="#!">Lorem ipsum dolor</a></li>
-    <li><a class="truncate" href="#!">Quisque tempus</a></li>
-    <li><a class="truncate" href="#!">Pellentesque</a></li>
+<ul id='internetComercial' class='dropdown-content secondDropDown'>
+    <li><a class="truncate" href="#!">EMPRESARIAL</a></li>
+    <li><a class="truncate" href="#!">PUNTOS DE VENTAS</a></li>
+  <li><a class="truncate" href="#!">TELEFONIA IP</a></li>
   </ul>
+
+
+
+  <!-- Dropdown Structure -->
+  <ul id='serviciosClientesSubmenu1' class='dropdown-content'>
+    <li><a style="color:#444;" href="#!" href="#!">REGISTRA TU PAGO</a></li>
+    <li><a style="color:#444;" href="#!" class="dropdown-button" href="#!">SOLICITUDES</a></li>
+    <li><a style="color:#444;" href="#!" class="dropdown-button" href="#!"> PREGUNTAS FRENCUENTES</a></li>
+  </ul>
+
 
 <nav class="white nav-white">
   <div class="nav-wrapper">
