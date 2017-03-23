@@ -50,9 +50,6 @@ body {
 	top: 20%;;
 }
 </style>
-<div id="particles">
-
-</div>
 <div class="row login hide-on-med-and-up">
     <div class="col s12">
         <div class="card-panel z-depth-3">
