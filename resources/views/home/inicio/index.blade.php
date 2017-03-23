@@ -44,6 +44,7 @@
   .tituloBanner{
   	font-family: 'Cantarell', sans-serif;
   	color:#555;
+  	font-style: italic;
   }
   
   .parrafoBanner{
@@ -72,7 +73,7 @@
   
 </style>
 <div class="row">
-  <div class="col s12 m12 l6"><img src="https://s-media-cache-ak0.pinimg.com/564x/ed/1c/09/ed1c09272f9f8c9b209389a4b5314294.jpg" alt=""/></div>
+  <div class="col s12 m12 l6"><br/><img src="https://s-media-cache-ak0.pinimg.com/564x/ed/1c/09/ed1c09272f9f8c9b209389a4b5314294.jpg" alt=""/></div>
   <div class="col s12 m12 l6">
     <div class="col s12 m12 l1"><br/><i aria-hidden="true" class="iconoBanner fa fa-fighter-jet fa-3x blue-text"></i></div>
     <div class="col s12 m12 l11">
@@ -166,7 +167,7 @@
     </div>
     <div class="col s12 m12 l3"><br/>
       <div style="z-index:5" class="card">
-        <div class="card-image"><img src="https://conceptdraw.com/a3179c3/p14/preview/640/pict--credit-cards-sales-symbols---vector-stencils-library.png--diagram-flowchart-example.png" style="height:295px;"/></div>
+        <div class="card-image"><img src="https://conceptdraw.com/a3179c3/p14/preview/640/pict--credit-cards-sales-symbols---vector-stencils-library.png--diagram-flowchart-example.png"/></div>
         <div class="divider"></div>
         <div class="card-content">
           <h6 class="blue-text">PAGOS ONLINE</h6>

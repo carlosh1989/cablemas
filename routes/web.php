@@ -65,5 +65,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 Route::get('/somos', 'HomeController@somos');
+Route::get('residencial', function () {
+    return view('home/inicio/residencial');
+});
 Route::get('/login','HomeController@login');
 Route::get('/logout', 'HomeController@logout');

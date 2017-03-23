@@ -11,6 +11,8 @@
     <title>{{ config('app.name') }}</title>
 
     <!-- Styles -->
+
+    <link href="https://fonts.googleapis.com/css?family=Cantarell:400,700i" rel="stylesheet">
     <link href="/css/app.css" rel="stylesheet">
 <link rel="stylesheet" href="{{url('bower/materialize/dist/css/materialize.min.css')}}"> 
       <link rel="stylesheet" href="{{url('/bower/sweetalert/dist/sweetalert.css')}}">     
@@ -75,6 +77,55 @@
   margin-left: 124px !important;
   margin-top: -50px !important;
 }
+
+  #lista2 {
+    counter-reset: li; 
+    list-style: none; 
+    *list-style: decimal; 
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  }
+
+  #lista2 ol {
+    margin: 0 0 0 2em; 
+  }
+
+  #lista2 li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    color: #777;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;   
+  }
+
+  #lista2 li:hover{
+    background: #eee;
+  }
+
+
+  #lista2 li:before{
+    content: counter(li);
+    counter-increment: li;
+    color: #fff;
+    position: absolute; 
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #777;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+  }
     </style>
 </head>
 <body>

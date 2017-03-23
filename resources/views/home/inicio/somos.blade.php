@@ -83,17 +83,15 @@
       <div class="col s12 m12 l11">
         <h5 class="tituloBanner">Oportunidades</h5>
         <div class="divider"></div>
-        <div class="grey-text parrafoBanner">
-          <ul>
-            <li>*Crecimiento en la demanda de servicios.</li>
-            <li>*Diversificación de servicios IP.</li>
-            <li>*Zonas desatendidas.</li>
-            <li>*Bajo nivel técnico/conocimiento y demoras en soporte de la competencia.</li>
-            <li>*Producto / Servicio Innovador.</li>
-            <li>*Saturación de la infraestructura actual de la competencia.</li>
-            <li>*Revolución Inalámbrica en el mercado.</li>
-          </ul>
-        </div>
+        <ul id="lista2">
+          <li>Crecimiento en la demanda de servicios.</li>
+          <li>Diversificación de servicios IP.</li>
+          <li>Zonas desatendidas.</li>
+          <li>Bajo nivel técnico/conocimiento y demoras en soporte de la competencia.</li>
+          <li>Producto / Servicio Innovador.</li>
+          <li>Saturación de la infraestructura actual de la competencia.</li>
+          <li>Revolución Inalámbrica en el mercado.</li>
+        </ul>
       </div>
     </div>
   </div>
