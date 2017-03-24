@@ -57,7 +57,7 @@
     <div class="col s12 m12 l12">
       <div class="col s12 m12 l1"><br/><i aria-hidden="true" class="iconoBanner fa fa-users fa-3x blue-text"></i></div>
       <div class="col s12 m12 l11">
-        <h5 class="tituloBanner">Quiénes somos</h5>
+        <h5 class="tituloBanner">Quiénes somos asdasd</h5>
         <div class="divider"></div>
         <p class="grey-text parrafoBanner">Cablemas, Fundada en el año 2013 es la primera Empresa Integradora de Telecomunicaciones en Venezuela en ofrecer Servicios de Internet Inalámbrico en la Región los Andes y Centroccidental del País, con capital 100% Nacional, focalizado al mercado Residencial, PYMES y Empresarial, ofrecemos velocidades de acceso a Internet, según los requerimientos del cliente, en cualquier lugar, gracias a la utilización de tecnologías de última generación.</p>
       </div>

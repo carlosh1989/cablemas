@@ -103,7 +103,7 @@
             <h6 class="grey-text">Posee antena?</h6>
             <div class="divider"></div>
             <p>
-              <input id="antenano" name="antena" type="radio" class="with-gap"/>
+              <input id="antenano" name="antena" type="radio" checked="checked" class="with-gap"/>
               <label for="antenano">NO</label>
             </p>
             <p>
@@ -119,6 +119,7 @@
               $("#antenano").click(function() {
               $("#antena").hide("slow");
               });
+              $('select').material_select('destroy');
               });
             </script>
           </div>
