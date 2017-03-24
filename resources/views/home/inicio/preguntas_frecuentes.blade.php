@@ -226,6 +226,10 @@
               Es posible que en ocaciones el volumen de llamadas sea muy alto y tenga que esperar. Puede intentar en otro momento o utilizando métodos alternos como, Email y/o redes sociales.
             </p>
           </li>
+          <li>
+            <h6 class="blue-text">¿El internet es ilimitado?</h6>
+            <p>Si. A diferencia de otras compañías que limitan el consumo o tienen lo que llaman “MEGAS/GB” nosotros no operamos de esa manera. Usted paga por la velocidad, el consumo no tiene limite.</p>
+          </li>
         </ul>
       </div>
     </div>
