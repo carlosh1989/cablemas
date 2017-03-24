@@ -69,5 +69,13 @@ Route::get('dedicado', function () {
     return view('home/inicio/dedicado');
 });
 
+Route::get('registroPago', function () {
+    return view('home/inicio/registro_pago');
+});
+
+Route::get('solicitudServicio', function () {
+    return view('home/inicio/solicitud_servicio');
+});
+
 Route::get('/login','HomeController@login');
 Route::get('/logout', 'HomeController@logout');

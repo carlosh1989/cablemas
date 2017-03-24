@@ -75,7 +75,7 @@
 <div class="row">
   <div class="col s12 m12 l6"><br/><img src="https://s-media-cache-ak0.pinimg.com/564x/ed/1c/09/ed1c09272f9f8c9b209389a4b5314294.jpg" alt=""/></div>
   <div class="col s12 m12 l6">
-    <div class="col s12 m12 l1"><br/><i aria-hidden="true" class="iconoBanner fa fa-fighter-jet fa-3x blue-text"></i></div>
+    <div class="col s12 m12 l1"><br/><i aria-hidden="true" class="iconoBanner fa fa-tachometer fa-3x blue-text"></i></div>
     <div class="col s12 m12 l11">
       <h4 class="tituloBanner">Velocidad Garantizada</h4>
       <p class="grey-text parrafoBanner">Navega y descargas a velocidades optimas</p>
@@ -106,26 +106,26 @@
     <div class="col s12 m12 l3"><br/><i class="fa fa-user fa-2x icono blue-text"></i>
       <div class="titulo">INTERNET RESIDENCIAL</div>
       <div class="col l10 offset-l1">
-        <p>Acceso a Internet de Banda Ancha, dirigido al segmento de hogares, con acceso ilimitado a Internet</p>
+        <p>Acceso a Internet de Banda Ancha, dirigido al segmento de hogares, con acceso ilimitado a Internet.</p>
       </div>
     </div>
     <div class="col s12 m12 l3"><br/><i class="fa fa-briefcase fa-2x icono blue-text"></i>
       <div class="titulo">NTERNET COMERCIAL</div>
       <div class="col l10 offset-l1">
-        <p>Acceso a Internet de Banda Ancha, dirigido al segmento de hogares, con acceso ilimitado a Internet</p>
+        <p>Servicio de Acceso a Internet de Banda Ancha, Dirigido a Empresas Medianas y Grandes.</p>
       </div>
     </div>
     <div class="col s12 m12 l3"><br/><i class="fa fa-cloud fa-2x icono blue-text"></i>
-      <div class="titulo">INTERNET RESIDENCIAL</div>
+      <div class="titulo">INTERNET DEDICADO</div>
       <div class="col l10 offset-l1">
-        <p>Acceso a Internet de Banda Ancha, dirigido al segmento de hogares, con acceso ilimitado a Internet</p>
+        <p>Nuestro servicio de Internet Dedicado cumple con los mas altos estándares internacionales.</p>
       </div>
     </div>
     <div class="col s12 m12 l3"><br/><i class="fa fa-wifi fa-2x icono blue-text"></i>
-      <div class="titulo">INTERNET RESIDENCIAL</div>
+      <div class="titulo">COBERTURA</div>
       <div class="col l10 offset-l1">
         <p>
-          Acceso a Internet de Banda Ancha, dirigido al segmento de hogares, con acceso ilimitado a Internet
+          Amplia cobertura en todo el territorio de nuestro estado Barinas.
           
         </p>
       </div>
@@ -186,7 +186,7 @@
       <div class="col s12 m12 l7 offset-l1"><br/><br/>
         <div class="col s12 m12 l1"><br/><i aria-hidden="true" class="iconoBanner fa fa-users fa-3x blue-text"></i></div>
         <div class="col s12 m12 l11">
-          <h5 class="tituloBanner">¿Por qué elegirnos? </h5>
+          <h5 class="tituloBanner">Por qué elegirnos? </h5>
           <div class="divider"></div>
           <p style="text-indent:0.8em;" class="grey-text">Somos la primera Empresa Integradora de Telecomunicaciones en Venezuela en ofrecer Servicios de Internet Inalámbrico en la Barinas, con capital 100% Nacional, focalizado al mercado Residencial, Comercial y Empresarial, ofrecemos velocidades de acceso a Internet, según los requerimientos del cliente, en cualquier lugar, gracias a la utilización de tecnologías de última generación. Contamos con un equipo altamente capacitado para ofrecer un buen servicio en atención y rapidez, logrando ser una compañía que se adapte a las necesidades del consumidor.</p>
         </div>

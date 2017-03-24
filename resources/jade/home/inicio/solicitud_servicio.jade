@@ -1,0 +1,150 @@
+@extends('layouts.home')
+@section('content')
+style(type='text/css').
+	p{
+		text-align: justify;
+		color:#777;
+	}
+	.img {
+	    width: 100%;
+	    height: auto;
+	    margin-top: 50px;
+		vertical-align: middle;
+	}
+
+	.texto
+	{
+		color: #777;
+	}
+
+	body
+	{
+		background: #fff;
+	}
+
+	.imagenBanner{
+	    width: 100%;
+	    height: auto;
+	    max-width: 100%;
+	}
+
+	.tituloBanner{
+		font-family: 'Cantarell', sans-serif;
+		color:#555;
+	}
+	
+	.parrafoBanner{
+		text-indent: 0.7em;
+		text-align: justify;
+	}
+
+	@media (max-width: 600px) {
+		.tituloBanner{
+			font-family: 'Cantarell', sans-serif;
+			text-align: center;
+		}
+		
+		.parrafoBanner{
+			text-indent: 0.7em;
+			text-align: justify;
+		}
+	}
+
+.section
+	.row.container
+		.col.s12.m12.l12
+			.col.s12.m12.l1
+				br
+				i(aria-hidden="true").iconoBanner.fa.fa-clipboard.fa-3x.blue-text
+			.col.s12.m12.l11
+				h5.tituloBanner Solicitud de Servicio Residencial
+				.divider
+				p.grey-text.parrafoBanner.
+					Para solicitar servicio de internet, llene el siguiente formulario y nos comunicaremos con usted.
+			.row.col.s12.m12.l9.offset-l1
+				form
+					.row
+						.input-field.col.s6
+							input#nombreapellido.validate(type='text')
+							label(for='nombreapellido') Nombre y Apellido
+						.input-field.col.s6
+							input#last_name.validate(type='text')
+							label(for='last_name') Cédula
+
+					.row
+						.input-field.col.s6
+							input#numerotelefono.validate(type='text')
+							label(for='numerotelefono') Número de telefono
+						.input-field.col.s6
+							input#email.validate(type='text')
+							label(for='email') Correo electronico
+
+					.row 
+						h6.grey-text Seleccionar Plan
+						.divider
+						p
+							input#test1.with-gap(name='metodo_pago', type='radio')
+							label(for='test1') BASICO
+						p
+							input#test2.with-gap(name='metodo_pago', type='radio')
+							label(for='test2') MEGA
+						p
+							input#test3.with-gap(name='metodo_pago', type='radio')
+							label(for='test3') PREMIUN
+
+					.row 
+						h6.grey-text Posee antena?
+						.divider
+						p
+							input#antenano.with-gap(name='antena', type='radio',  checked="checked")
+							label(for='antenano') NO
+						p
+							input#antenasi.with-gap(name='antena', type='radio')
+							label(for='antenasi') SI
+
+						script(type="text/javascript").
+							$(document).ready(
+							function() {
+							$("#antenasi").click(function() {
+							$("#antena").show("slow");
+							});
+							$("#antenano").click(function() {
+							$("#antena").hide("slow");
+							});
+ 							$('select').material_select('destroy');
+							});
+					.row#antena(style="display:none;")
+						h6.grey-text Seleccionar Plan
+						.divider
+						p
+							input#tipoantena1.with-gap(name='tipoantena', type='radio')
+							label(for='tipoantena1') LocoM2
+						p
+							input#tipoantena2.with-gap(name='tipoantena', type='radio')
+							label(for='tipoantena2') LocoM5
+						p
+							input#tipoantena3.with-gap(name='tipoantena', type='radio')
+							label(for='tipoantena3') NanoStation M2
+						p
+							input#tipoantena4.with-gap(name='tipoantena', type='radio')
+							label(for='tipoantena4') NanoStation M5
+						p
+							input#tipoantena5.with-gap(name='tipoantena', type='radio')
+							label(for='tipoantena5') PowerBeam M5
+						p
+							input#tipoantena6.with-gap(name='tipoantena', type='radio')
+							label(for='tipoantena6') Mikrotik (2.4Ghz/5Ghz)
+						p
+							input#test3.with-gap(name='tipoantena', type='radio')
+							label(for='test3') Tplink (2.4Ghz/5Ghz)
+
+					.row
+						form.col.s12
+						.row
+							.input-field.col.s12
+								textarea#textarea1.materialize-textarea
+								label(for='textarea1') Dirección
+					.row
+						button.col.s2.push-s10.btn.blue.waves-effect.waves-light ENVIAR #[i.fa.fa-paper-plane]
+
+@endsection

@@ -82,7 +82,7 @@
 <div class="section">
   <div class="row container">
     <div class="col s12 m12 l12">
-      <div class="col s12 m12 l1"><br/><i aria-hidden="true" class="iconoBanner fa fa-users fa-3x blue-text"></i></div>
+      <div class="col s12 m12 l1"><br/><i aria-hidden="true" class="iconoBanner fa fa-home fa-3x blue-text"></i></div>
       <div class="col s12 m12 l11">
         <h5 class="tituloBanner">Residencial</h5>
         <div class="divider"></div>
@@ -104,17 +104,33 @@
 </div>
 <div class="section grey darken-4"><br/>
   <!--#particles(style="z-index:1")-->
-  <div class="row">
+  <div class="row container">
     <div class="col s12 m12 l4">
       <div class="card">
-        <div style="text-align:center;font-size:2em;" class="card-title blue white-text">BASICO</div>
-        <div class="precioPlanes green-text">$10,52</div>
-        <div class="velocidadPlanes blue-text"><i class="fa fa-star-o fa-3x"></i><br/><a>512Kbps</a><br/><a class="grey-text">Ilimitado</a></div>
+        <div style="text-align:center;font-size:2em;text-shadow:0px 0px 1px #DFDFDF;font-weight: 700;" class="card-title blue white-text"> BASICO	</div>
+        <div class="velocidadPlanes blue-text"><i style="text-shadow:0px 1px 1px #444;" class="fa fa-star-o fa-3x"></i><br/><a>512Kbps</a><br/><a class="grey-text">Ilimitado</a></div>
+        <div class="precioPlanes green-text"><a class="green-text">4.208 BsF.</a><br/></div>
         <div class="card-content">
           <ul class="collection">
             <li class="collection-item">Navegar por páginas básicas: bancos, Servipag, Facebook y los principales diarios.</li>
-            <li class="collection-item">Comunicarse y compartir: en tus redes sociales favoritas.</li>
-            <li class="collection-item">Chatear: usando tus aplicaciones de mensajería instantánea</li>
+            <li class="collection-item">Comunicarse y compartir: en tus redes sociales favoritas. </li>
+            <li class="collection-item">Enviar y recibir correos: con tu cuenta de Gmail, Hotmail-Outlook, Yahoo, etc.</li>
+            <li class="collection-item">Contratación sujeta a factibilidad técnica y evaluación comercial.</li>
+          </ul>
+        </div>
+        <div class="center-align"></div>
+        <button style="width:100%;text-shadow:inset 0px 0px 2px #444;" class="waves-effect waves-light btn btn-large green tituloBanner">CONTRATAR <i class="fa fa-pencil-square-o"></i></button>
+      </div>
+    </div>
+    <div class="col s12 m12 l4">
+      <div class="card">
+        <div style="text-align:center;font-size:2em;text-shadow:0px 0px 1px #DFDFDF;font-weight: 700;" class="card-title blue white-text"> MEGA</div>
+        <div class="velocidadPlanes blue-text"><i style="text-shadow:0px 1px 1px #444;" class="fa fa-star-half-o fa-3x"></i><br/><a>1024Kbps</a><br/><a class="grey-text">Ilimitado</a></div>
+        <div class="precioPlanes green-text"><a class="green-text">9.880 BsF.</a><br/></div>
+        <div class="card-content">
+          <ul class="collection">
+            <li class="collection-item">Navegar por páginas básicas: bancos, Servipag, Facebook y los principales diarios.</li>
+            <li class="collection-item">Comunicarse y compartir: en tus redes sociales favoritas. </li>
             <li class="collection-item">Enviar y recibir correos: con tu cuenta de Gmail, Hotmail-Outlook, Yahoo, etc.</li>
             <li class="collection-item">Contratación sujeta a factibilidad técnica y evaluación comercial.</li>
           </ul>
@@ -125,32 +141,13 @@
     </div>
     <div class="col s12 m12 l4">
       <div class="card">
-        <div style="text-align:center;font-size:2em;" class="card-title blue white-text"> MEGA</div>
-        <div class="precioPlanes green-text">$24.95</div>
-        <div class="velocidadPlanes blue-text"><i class="fa fa-star-half-o fa-3x"></i><br/><a>1024Kbps</a><br/><a class="grey-text">Ilimitado</a></div>
-        <div class="card-content">
-          <ul class="collection">
-            <li class="collection-item">Navegar por páginas básicas: bancos, Servipag, Facebook y los principales diarios.</li>
-            <li class="collection-item">Comunicarse y compartir: en tus redes sociales favoritas.</li>
-            <li class="collection-item">Chatear: usando tus aplicaciones de mensajería instantánea</li>
-            <li class="collection-item">Enviar y recibir correos: con tu cuenta de Gmail, Hotmail-Outlook, Yahoo, etc.</li>
-            <li class="collection-item">Contratación sujeta a factibilidad técnica y evaluación comercial.</li>
-          </ul>
-        </div>
-        <div class="center-align"></div>
-        <button style="width:100%;" class="waves-effect waves-light btn btn-large green tituloBanner">CONTRATAR <i class="fa fa-pencil-square-o"></i></button>
-      </div>
-    </div>
-    <div class="col s12 m12 l4">
-      <div class="card">
-        <div style="text-align:center;font-size:2em;" class="card-title blue white-text"> PREMIUN</div>
-        <div class="precioPlanes green-text">$39.95</div>
-        <div class="velocidadPlanes blue-text"><i class="fa fa-star fa-3x"></i><br/><a>2048Kbps</a><br/><a class="grey-text">Ilimitado</a></div>
+        <div style="text-align:center;font-size:2em;text-shadow:0px 0px 1px #DFDFDF;font-weight: 700;" class="card-title blue white-text"> PREMIUN</div>
+        <div class="velocidadPlanes blue-text"><i style="text-shadow:0px 1px 1px #444;" class="fa fa-star fa-3x"></i><br/><a>2048Kbps</a><br/><a class="grey-text">Ilimitado</a></div>
+        <div class="precioPlanes green-text"><a class="green-text">15.600 BsF.</a><br/></div>
         <div class="card-content">
           <ul class="collection">
             <li class="collection-item">Compartir lo que quieras: en redes sociales, chatear y enviar correos.</li>
             <li class="collection-item">Conectar tus dispositivos al mismo tiempo: computadores, smartphones, tableta, etc.</li>
-            <li class="collection-item">Jugar en linea: desde tu computador o tu consola.</li>
             <li class="collection-item">Ver vídeos en linea: en YouTube, Netflix u otros servicios.</li>
             <li class="collection-item">Contratación sujeta a factibilidad técnica y evaluación comercial.</li>
           </ul>

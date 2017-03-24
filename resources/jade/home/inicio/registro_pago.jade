@@ -1,0 +1,117 @@
+@extends('layouts.home')
+@section('content')
+style(type='text/css').
+	p{
+		text-align: justify;
+		color:#777;
+	}
+	.img {
+	    width: 100%;
+	    height: auto;
+	    margin-top: 50px;
+		vertical-align: middle;
+	}
+
+	.texto
+	{
+		color: #777;
+	}
+
+	body
+	{
+		background: #fff;
+	}
+
+	.imagenBanner{
+	    width: 100%;
+	    height: auto;
+	    max-width: 100%;
+	}
+
+	.tituloBanner{
+		font-family: 'Cantarell', sans-serif;
+		color:#555;
+	}
+	
+	.parrafoBanner{
+		text-indent: 0.7em;
+		text-align: justify;
+	}
+
+	@media (max-width: 600px) {
+		.tituloBanner{
+			font-family: 'Cantarell', sans-serif;
+			text-align: center;
+		}
+		
+		.parrafoBanner{
+			text-indent: 0.7em;
+			text-align: justify;
+		}
+	}
+
+.section
+	.row.container
+		.col.s12.m12.l12
+			.col.s12.m12.l1
+				br
+				i(aria-hidden="true").iconoBanner.fa.fa-money.fa-3x.blue-text
+			.col.s12.m12.l11
+				h5.tituloBanner Registro de Pago
+				.divider
+				p.grey-text.parrafoBanner.
+					Este formulario le permitirá agilizar su tramite de activación y servicios de Internet
+			.row.col.s12.m12.l9.offset-l1
+				form
+					.row
+						.input-field.col.s6
+							input#nombreapellido.validate(type='text')
+							label(for='nombreapellido') Nombre y Apellido o razón social
+						.input-field.col.s6
+							input#last_name.validate(type='text')
+							label(for='last_name') Cédula o Rif
+					.row
+						form.col.s12
+						.row
+							.input-field.col.s12
+								textarea#textarea1.materialize-textarea
+								label(for='textarea1') Dirección
+					.row
+						.input-field.col.s6
+							input#numerotelefono.validate(type='text')
+							label(for='numerotelefono') Número de telefono
+						.input-field.col.s6
+							input#email.validate(type='text')
+							label(for='email') Correo electronico
+					.row 
+						h6.grey-text Metodo de Pago
+						.divider
+						p
+							input#test1.with-gap(name='metodo_pago', type='radio')
+							label(for='test1') Deposito
+						p
+							input#test2.with-gap(name='metodo_pago', type='radio')
+							label(for='test2') Transferencia
+						p
+							input#test3.with-gap(name='metodo_pago', type='radio')
+							label(for='test3') Pago efectivo
+						p
+							input#test4.with-gap(name='metodo_pago', type='radio')
+							label(for='test4') Pago por punto de venta
+					.row
+						.input-field.col.s6
+							input#fecha.validate(type='text')
+							label(for='fecha') Fecha Ejemplo: 05/03/2013 11.30 a. m.
+						.input-field.col.s6
+							input#monto.validate(type='number')
+							label(for='monto') Monto
+					.row
+						.input-field.col.s12
+							input#comentarioPago.validate(type='text')
+							label(for='comentarioPago') Número Deposito, Cheque o Transfrencia, punto venta  REFERENCIA
+						.input-field.col.s12
+							input#entidadbancaria.validate(type='text')
+							label(for='entidadbancaria') Entidad Bancaria
+					.row
+						button.col.s2.push-s10.btn.blue.waves-effect.waves-light ENVIAR #[i.fa.fa-paper-plane]
+@endsection

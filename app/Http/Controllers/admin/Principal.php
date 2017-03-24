@@ -15,7 +15,7 @@ class Principal extends Controller
      */
     public function index()
     {
-        $smsGateway = new SmsGateway('elmorochez22@gmail.com', 'smsgateway');
+        $smsGateway = new SmsGateway('elmorochez22@gmail.com', '');
         $deviceID = 44084;
         $number = '+584148435842';
         $message = 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum';
