@@ -55,22 +55,15 @@
 <div class="section">
   <div class="row container">
     <div class="col s12 m12 l12">
-      <div class="col s12 m12 l1"><br/><i aria-hidden="true" class="iconoBanner fa fa-building-o fa-3x blue-text"></i></div>
+      <div class="col s12 m12 l1"><br/><i aria-hidden="true" class="iconoBanner fa fa-volume-control-phone fa-3x blue-text"></i></div>
       <div class="col s12 m12 l11">
-        <h5 class="tituloBanner">Comercial</h5>
+        <h5 class="tituloBanner">Telefonía IP</h5>
         <div class="divider"></div>
+        <h6 class="tituloBanner blue-text">Que es telefonia Ip?</h6>
         <p class="grey-text parrafoBanner">
-          Producto de acceso a Internet de conexión permanente diseñado para medianas y pequeñas empresas.
+          El mundo entero se está dando cuenta que la telefonía por Internet es la más innovadora y práctica manera de comunicarse.  Al contrario de las compañías de telefonía convencionales,  el servicio de teléfono por Internet permite que usuarios hagan y reciban llamadas telefónicas a un bajo costo aprovechando su conexión de Internet de banda ancha y un teléfono para Internet ó un adaptador (ATA).
           
         </p>
-        <h6 class="tituloBanner blue-text">Características del producto:</h6>
-        <ul id="lista2">
-          <li>Plan ilimitado de conexión.</li>
-          <li>Transporte TDMA Wirelles.</li>
-          <li>Soportado en la plataforma TDMA.</li>
-          <li>Velocidad Asimétrica de 256kbps hasta 10240kbps.</li>
-          <li>Diseñado para usuarios de aplicaciones no críticas.</li>
-        </ul>
       </div>
     </div>
   </div>

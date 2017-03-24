@@ -44,6 +44,11 @@ class HomeController extends Controller
         return view('home/inicio/somos');
     }
 
+    public function comercial_empresarial()
+    {
+        return view('home/inicio/comercial_empresarial');
+    }
+
     public function logout()
     {
         auth::logout();
