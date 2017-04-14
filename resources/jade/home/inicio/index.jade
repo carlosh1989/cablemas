@@ -37,6 +37,12 @@ style(type='text/css').
 	.imagenBanner{
 	    width: 100%;
 	    height: auto;
+	    max-width: 70%;
+	}
+
+	.imagenBanner2{
+	    width: 100%;
+	    height: auto;
 	    max-width: 100%;
 	}
 
@@ -70,142 +76,110 @@ style(type='text/css').
 	  position: absolute;
 	}
 
+
+.slider
+	ul.slides
+		li
+			img(src="https://www.ingeniumweb.com/Themes/IngeniumWeb/Content/img/slider/Mobile%20App%20Development%20Showcase.jpg")
+			.caption.center-align
+				h4
+					a(href="#", style="padding:5px;").white.tituloBanner TITULO
+				h5.light.white-text.text-lighten-3.white-text 
+					a(href="#", style="padding:5px;").green.white-text Here is our small slogan
+		li
+			img(src="https://www.mercedes-amg.com/webspecial/beastofthegreenhell/img/jungleGallery/gallery/04.jpg")
+			.caption.center-align
+				h4
+					a(href="#", style="padding:5px;").white.tituloBanner TITULO
+				h5.light.white-text.text.text-lighten-3.white-text 
+					a(href="#", style="padding:5px;").green.white-text Here is our small slogan
+
+
 .row
 	.col.s12.m12.l6
 		br
-		img(src="https://s-media-cache-ak0.pinimg.com/564x/ed/1c/09/ed1c09272f9f8c9b209389a4b5314294.jpg", alt="")
+		img.imagenBanner(src="http://www.toyoclub.com/img/combo.png", alt="")
 	.col.s12.m12.l6
-		.col.s12.m12.l1
+		.col.s12.m12.l1.center-align
 			br
-			i(aria-hidden="true").iconoBanner.fa.fa-tachometer.fa-3x.blue-text
+			a.iconoBanner.fa.fa-tachometer.fa-3x.green-text
 		.col.s12.m12.l11
-			h4.tituloBanner Velocidad Garantizada
+			h4.tituloBanner LLega rapido
 			p.grey-text.parrafoBanner.
 				Navega y descargas a velocidades optimas
-		.col.s12.m12.l1
+		.col.s12.m12.l1.center-align
 			br
-			i(aria-hidden="true").iconoBanner.fa.fa-cloud-download.fa-3x.blue-text
+			i(aria-hidden="true").iconoBanner.fa.fa-wifi.fa-3x.green-text
 		.col.s12.m12.l11
-			h4.tituloBanner Internet Ilimitado 
-			p.grey-text.parrafoBanner.
-				Descarga todo lo que desees sin limitaciones
-		.col.s12.m12.l1
-			br
-			i(aria-hidden="true").iconoBanner.fa.fa-wifi.fa-3x.blue-text
-		.col.s12.m12.l11
-			h4.tituloBanner Intalación de Router
+			h4.tituloBanner Encuantra el mas cercano
 			p.grey-text.parrafoBanner.
 				Da señal a todos tus dispositivos inalambricos
-		.col.s12.m12.l1
+		.col.s12.m12.l1.center-align
 			br
-			i(aria-hidden="true").iconoBanner.fa.fa-credit-card-alt.fa-3x.blue-text
+			i(aria-hidden="true").iconoBanner.fa.fa-credit-card-alt.fa-3x.green-text
 		.col.s12.m12.l11
 			h4.tituloBanner Pagos Online
 			p.grey-text.parrafoBanner.
 				Registra tus pagos desde la comodidad de tu casa
 
-.divider
 
-.texto
+.texto.grey.darken-4
 	.row
-		.col.s12.m12.l3
+		.col.s12.m12.l6
 			br
-			i.fa.fa-user.fa-2x.icono.blue-text
-			.titulo INTERNET RESIDENCIAL
-			.col.l10.offset-l1
-				p.
-					Acceso a Internet de Banda Ancha, dirigido al segmento de hogares, con acceso ilimitado a Internet.
-		.col.s12.m12.l3
-			br
-			i.fa.fa-briefcase.fa-2x.icono.blue-text
-			.titulo NTERNET COMERCIAL
-			.col.l10.offset-l1
-				p.
-					Servicio de Acceso a Internet de Banda Ancha, Dirigido a Empresas Medianas y Grandes.
-		.col.s12.m12.l3
-			br
-			i.fa.fa-cloud.fa-2x.icono.blue-text
-			.titulo INTERNET DEDICADO
-			.col.l10.offset-l1
-				p.
-					Nuestro servicio de Internet Dedicado cumple con los mas altos estándares internacionales.
-		.col.s12.m12.l3
-			br
-			i.fa.fa-wifi.fa-2x.icono.blue-text
-			.titulo COBERTURA
-			.col.l10.offset-l1
-				p.
-					Amplia cobertura en todo el territorio de nuestro estado Barinas.
-
-.section.grey.darken-4
-	//#particles(style="z-index:1")
-	.row.container
-		.col.s12.m12.l3
-			br
-			.card(style="z-index:2")
-				.card-image
-					br
-					br
-					img(src='http://i582.photobucket.com/albums/ss266/otet_2009/Template/parabola-2.png')
+			.col.s12.m12.l1.center-align
 				br
-				.divider
-				.card-content
-					h6.blue-text NODOS CABLEMAS
-					p.grey-text.
-						Tecnología TDMA
-		.col.s12.m12.l3
+				a.iconoBanner.fa.fa-tachometer.fa-3x.green-text
+			.col.s12.m12.l11
+				h4.tituloBanner.white-text LLega rapido
+				p.grey-text.parrafoBanner.
+					Navega y descargas a velocidades optimas
+			.col.s12.m12.l1.center-align
+				br
+				i(aria-hidden="true").iconoBanner.fa.fa-wifi.fa-3x.green-text
+			.col.s12.m12.l11
+				h4.tituloBanner.white-text Encuantra el mas cercano
+				p.grey-text.parrafoBanner.
+					Da señal a todos tus dispositivos inalambricos
+			.col.s12.m12.l1.center-align
+				br
+				i(aria-hidden="true").iconoBanner.fa.fa-credit-card-alt.fa-3x.green-text
+			.col.s12.m12.l11
+				h4.tituloBanner.white-text Pagos Online
+				p.grey-text.parrafoBanner.
+					Registra tus pagos desde la comodidad de tu casa
+		.col.s12.m12.l6
 			br
-			.card(style="z-index:3")
-				.card-image
-					br
-					br
-					img(src='http://www.freeiconspng.com/uploads/helpdesk-icon-33.png')
-				br
-				.divider
-				.card-content
-					h6.blue-text SOPORTE TECNICO
-					p.grey-text.
-						Personal Años Experiencia
-		.col.s12.m12.l3
 			br
-			.card(style="z-index:4")
-				.card-image
-					br
-					br
-					img(src='http://img.clubic.com/01592870-photo-logo-telephone-fax.jpg')
-				br
-				.divider
-				.card-content
-					h6.blue-text TELEFONÍA IP
-					p.grey-text.
-						Para Punto Ventas
-		.col.s12.m12.l3
 			br
-			.card(style="z-index:5")
-				.card-image
-					img(src='https://conceptdraw.com/a3179c3/p14/preview/640/pict--credit-cards-sales-symbols---vector-stencils-library.png--diagram-flowchart-example.png')
-				.divider
-				.card-content
-					h6.blue-text PAGOS ONLINE
-					p.grey-text.
-						Fácil Y Sencillo
-
-.texto
-	.row
-		.col.s12.m12.l12
-			.col.s12.m12.l7.offset-l1
-				br
-				br
-				.col.s12.m12.l1
-					br
-					i(aria-hidden="true").iconoBanner.fa.fa-users.fa-3x.blue-text
-				.col.s12.m12.l11
-					h5.tituloBanner Por qué elegirnos? 
-					.divider
-					p(style="text-indent:0.8em;").grey-text.
-						Somos la primera Empresa Integradora de Telecomunicaciones en Venezuela en ofrecer Servicios de Internet Inalámbrico en la Barinas, con capital 100% Nacional, focalizado al mercado Residencial, Comercial y Empresarial, ofrecemos velocidades de acceso a Internet, según los requerimientos del cliente, en cualquier lugar, gracias a la utilización de tecnologías de última generación. Contamos con un equipo altamente capacitado para ofrecer un buen servicio en atención y rapidez, logrando ser una compañía que se adapte a las necesidades del consumidor.
-			.col.s12.m12.l3.offset-l1
-				img(src="http://lifefreedom.com/wp-content/uploads/2015/07/woman-thinking.png" style="height:300px;position:absolute;z-index:-1;", alt="")
+			img.imagenBanner2(src="http://www.clipartbest.com/cliparts/RTG/kb7/RTGkb7qTL.png", alt="")
+	br
+.row
+	.col.s12.m12.l6
+		br
+		img.imagenBanner(src="http://www.toyoclub.com/img/combo.png", alt="")
+	.col.s12.m12.l6
+		.col.s12.m12.l1.center-align
+			br
+			a.iconoBanner.fa.fa-tachometer.fa-3x.green-text
+		.col.s12.m12.l11
+			h4.tituloBanner LLega rapido
+			p.grey-text.parrafoBanner.
+				Navega y descargas a velocidades optimas
+		.col.s12.m12.l1.center-align
+			br
+			i(aria-hidden="true").iconoBanner.fa.fa-wifi.fa-3x.green-text
+		.col.s12.m12.l11
+			h4.tituloBanner Encuantra el mas cercano
+			p.grey-text.parrafoBanner.
+				Da señal a todos tus dispositivos inalambricos
+		.col.s12.m12.l1.center-align
+			br
+			i(aria-hidden="true").iconoBanner.fa.fa-credit-card-alt.fa-3x.green-text
+		.col.s12.m12.l11
+			h4.tituloBanner Pagos Online
+			p.grey-text.parrafoBanner.
+				Registra tus pagos desde la comodidad de tu casa
 
 script(type="text/javascript").
 	$(document).ready(function(){

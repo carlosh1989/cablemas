@@ -15,10 +15,21 @@ class Principal extends Controller
      */
     public function index()
     {
-        $smsGateway = new SmsGateway('elmorochez22@gmail.com', '');
+        $smsGateway = new SmsGateway('elmorochez22@gmail.com', 'smsgateway');
         $deviceID = 44084;
-        $number = '+584148435842';
-        $message = 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum';
+        $number = '+584127624857';
+$message = 
+'
+1)
+----------------------------------------------------
++ pasado   = Zuckemberg was president of facebook
+- pasado   = Zuckemberg was not president of facebook
++ presente = Zuckemberg is president of facebook
+- presente = Zuckemberg is not president of facebook
++ futuro  = Zuckemberg will be president of facebook
+- futuro  = Zuckemberg will not be president of facebook
+----------------------------------------------------
+';
 
         $options = [
             'expires_at' => strtotime('+1 hour') // Cancel the message in 1 hour if the message is not yet sent

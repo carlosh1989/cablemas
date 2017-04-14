@@ -9,7 +9,6 @@
     <title>{{ config('app.name') }}</title>
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Cantarell:400,700i" rel="stylesheet">
-    <link href="/css/app.css" rel="stylesheet">
     <link rel="stylesheet" href="{{url('bower/materialize/dist/css/materialize.min.css')}}">
     <link rel="stylesheet" href="{{url('/bower/sweetalert/dist/sweetalert.css')}}">
     <link rel="stylesheet" href="{{url('bower/components-font-awesome/css/font-awesome.min.css')}}">
@@ -36,6 +35,10 @@
     ]); ?>
     </script>
     <style>
+
+    body{
+      overflow-x: hidden;
+    }
     .autocomplete
     {
     z-index: 888;
@@ -116,6 +119,7 @@
     transition: all .3s ease-out;
     }
     </style>
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
   </head>
   <body>
     <script type="text/javascript" src="{{asset('/bower/jquery/dist/jquery.min.js')}}"></script>
@@ -140,41 +144,66 @@
         <li><a href="#!"> INTERNET DEDICADO</a></li>
       </ul>
       <ul id="serviciosClientesSubmenu2" class="dropdown-content lista">
-        <li><a style="color:#444;" href="#!"><i class="fa fa-user-plus fa-1x"></i> REGISTRA TU PAGO</a></li>
-        <li><a style="color:#444;" href="#!">SOLICITUD DE SERVICIO RESIDENCIAL</a></li>
-        <li><a style="color:#444;" href="#!">PREGUNTAS FRECUENTES</a></li>
+        <li><a style="color:#444;" href="{{ url('/registroPago') }}"><i class="fa fa-user-plus fa-1x"></i> REGISTRA TU PAGO</a></li>
+        <li><a style="color:#444;" href="{{ url('/solicitudServicio') }}">SOLICITUD DE SERVICIO RESIDENCIAL</a></li>
+        <li><a style="color:#444;" href="{{ url('/preguntasFrecuentes') }}">PREGUNTAS FRECUENTES</a></li>
       </ul>
       <!-- Dropdown Structure -->
       <ul id='serviciosSubmenu1' class='dropdown-content'>
-        <li><a style="color:#444;" href="#!" href="#!">INTERNET RESIDENCIAL</a></li>
+        <li><a style="color:#444;" href="{{ url('/residencial') }}">INTERNET RESIDENCIAL</a></li>
         <li><a style="color:#444;" href="#!" class="dropdown-button" href="#!" data-activates="internetComercial">INTERNET COMERCIAL</a></li>
-        <li><a style="color:#444;" href="#!" class="dropdown-button" href="#!" data-activates="secondDRP">INTERNET DEDICADO</a></li>
+        <li><a style="color:#444;" href="{{ url('/dedicado') }}">INTERNET DEDICADO</a></li>
       </ul>
       <ul id='internetComercial' class='dropdown-content secondDropDown'>
-        <li><a class="truncate" href="#!">EMPRESARIAL</a></li>
-        <li><a class="truncate" href="#!">PUNTOS DE VENTAS</a></li>
-        <li><a class="truncate" href="#!">TELEFONIA IP</a></li>
+        <li><a class="truncate" href="{{ url('/empresarial') }}">EMPRESARIAL</a></li>
+        <li><a class="truncate" href="{{ url('/telefoniaip') }}">TELEFONIA IP</a></li>
       </ul>
       <!-- Dropdown Structure -->
       <ul id='serviciosClientesSubmenu1' class='dropdown-content'>
-        <li><a style="color:#444;" href="#!" href="#!">REGISTRA TU PAGO</a></li>
-        <li><a style="color:#444;" href="#!" class="dropdown-button" href="#!">SOLICITUDES</a></li>
-        <li><a style="color:#444;" href="#!" class="dropdown-button" href="#!"> PREGUNTAS FRENCUENTES</a></li>
+        <li><a style="color:#444;" href="{{ url('/registroPago') }}"> REGISTRA TU PAGO</a></li>
+        <li><a style="color:#444;" href="{{ url('/solicitudServicio') }}">SOLICITUD DE SERVICIO RESIDENCIAL</a></li>
+        <li><a style="color:#444;" href="{{ url('/preguntasFrecuentes') }}">PREGUNTAS FRECUENTES</a></li>
       </ul>
       <nav class="white nav-white">
         <div class="nav-wrapper">
           <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-          <a href="#!" class="brand-logo"><img src="http://www.cablemas.com.ve/wp-content/uploads/CablemasLogo.png" width="250px;" alt=""></a>
+          <a href="{{ url('/') }}" class="brand-logo green-text lighten-2" style="font-family: 'Anton', sans-serif;"><img width="50" src="http://www.iconeasy.com/icon/ico/Sport/Dragon%20Ball%20Z/Dragon%20Radar.ico">RECARLINE</a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html"><i class="fa fa-address-card-o"></i> QUIENES SOMOS?</a></li>
+            <li><a href="{{ url('/somos') }}"><i class="fa fa-address-card-o"></i> QUIENES SOMOS?</a></li>
             <li><a class="dropdown-button" href="#!" data-activates="serviciosSubmenu1"><i class="fa fa-handshake-o"></i> SERVICIOS<i class="material-icons right">arrow_drop_down</i></a></li>
             <!-- Dropdown Trigger -->
             <li><a class="dropdown-button" href="#!" data-activates="serviciosClientesSubmenu1"><i class="fa fa-handshake-o"></i> SERVICIO AL CLIENTE<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="badges.html"><i class="fa fa-address-book"></i> CONTACTO</a></li>
+            <li><a href=""><i class="fa fa-address-book"></i> CONTACTO</a></li>
             <li><a href="{{ url('/login') }}"><i class="fa fa-sign-in"></i> LOGIN</a></li>
           </ul>
         </div>
       </nav>
+<style type="text/css">
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #fff;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #fff;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #fff;
+}
+</style>
+  <nav>
+    <div class="nav-wrapper green">
+      <form>
+        <div class="input-field">
+          <input id="search" type="search" placeholder="Ingrese el repuesto a buscar.." required>
+          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
+        </div>
+      </form>
+    </div>
+  </nav>
+
       <ul id='dropdown4' class='dropdown-content'>
         <li><a href="#!">two</a></li>
         <li class="divider"></li>

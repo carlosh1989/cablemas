@@ -167,6 +167,7 @@ return [
         Sven\ArtisanView\ArtisanViewServiceProvider::class,
         Sineld\BladeSet\BladeSetServiceProvider::class,
         Jenssegers\Date\DateServiceProvider::class,
+        Nwidart\Modules\LaravelModulesServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -232,6 +233,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Alert' => UxWeb\SweetAlert\SweetAlert::class,
         'Date' => Jenssegers\Date\Date::class,
+        'Module' => Nwidart\Modules\Facades\Module::class,
 
     ],
 

@@ -1,17 +1,17 @@
 Arguments: 
-  /usr/bin/nodejs /usr/share/yarn/bin/yarn.js add gulp-jade-inheritance
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js install
 
 PATH: 
-  /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+  /home/hugo/bin:/home/hugo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 
 Yarn version: 
   0.21.3
 
 Node version: 
-  6.9.1
+  6.10.1
 
 Platform: 
-  linux ia32
+  linux x64
 
 npm manifest: 
   {
@@ -5713,5 +5713,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/yeast/-/yeast-0.1.2.tgz#008e06d8094320c372dbc2f8ed76a0ca6c8ac419"
 
 Trace: 
-  Error: EPERM: operation not permitted, utime '/var/www/html/cablemas/node_modules/colors/MIT-LICENSE.txt'
-      at Error (native)
+  Error: getaddrinfo EAI_AGAIN github.com:443
+      at Object.exports._errnoException (util.js:1018:11)
+      at errnoException (dns.js:33:15)
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
