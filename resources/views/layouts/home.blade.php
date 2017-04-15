@@ -167,7 +167,7 @@
       <nav class="white nav-white">
         <div class="nav-wrapper">
           <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-          <a href="{{ url('/') }}" class="brand-logo green-text lighten-2" style="font-family: 'Anton', sans-serif;"><img width="50" src="http://www.iconeasy.com/icon/ico/Sport/Dragon%20Ball%20Z/Dragon%20Radar.ico">RECARLINE</a>
+          <a href="{{ url('/') }}" class="brand-logo green-text lighten-2" style="font-family: 'Anton', sans-serif;letter-spacing: 0.2em"><img width="50" src="http://www.iconeasy.com/icon/ico/Sport/Dragon%20Ball%20Z/Dragon%20Radar.ico">RECARLINE</a>
           <ul class="right hide-on-med-and-down">
             <li><a href="{{ url('/somos') }}"><i class="fa fa-address-card-o"></i> QUIENES SOMOS?</a></li>
             <li><a class="dropdown-button" href="#!" data-activates="serviciosSubmenu1"><i class="fa fa-handshake-o"></i> SERVICIOS<i class="material-icons right">arrow_drop_down</i></a></li>

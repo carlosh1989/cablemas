@@ -15,30 +15,30 @@ class Principal extends Controller
      */
     public function index()
     {
-        $smsGateway = new SmsGateway('elmorochez22@gmail.com', 'smsgateway');
-        $deviceID = 44084;
-        $number = '+584127624857';
-$message = 
-'
-1)
-----------------------------------------------------
-+ pasado   = Zuckemberg was president of facebook
-- pasado   = Zuckemberg was not president of facebook
-+ presente = Zuckemberg is president of facebook
-- presente = Zuckemberg is not president of facebook
-+ futuro  = Zuckemberg will be president of facebook
-- futuro  = Zuckemberg will not be president of facebook
-----------------------------------------------------
-';
+//         $smsGateway = new SmsGateway('elmorochez22@gmail.com', 'smsgateway');
+//         $deviceID = 44084;
+//         $number = '+584127624857';
+// $message = 
+// '
+// 1)
+// ----------------------------------------------------
+// + pasado   = Zuckemberg was president of facebook
+// - pasado   = Zuckemberg was not president of facebook
+// + presente = Zuckemberg is president of facebook
+// - presente = Zuckemberg is not president of facebook
+// + futuro  = Zuckemberg will be president of facebook
+// - futuro  = Zuckemberg will not be president of facebook
+// ----------------------------------------------------
+// ';
 
-        $options = [
-            'expires_at' => strtotime('+1 hour') // Cancel the message in 1 hour if the message is not yet sent
-        ];
+//         $options = [
+//             'expires_at' => strtotime('+1 hour') // Cancel the message in 1 hour if the message is not yet sent
+//         ];
 
-        //Please note options is no required and can be left out
-        $result = $smsGateway->sendMessageToNumber($number, $message, $deviceID, $options); 
-        var_dump($result);
-        //return view('admin.principal.index');
+//         //Please note options is no required and can be left out
+//         $result = $smsGateway->sendMessageToNumber($number, $message, $deviceID, $options); 
+//         var_dump($result);
+        return view('admin.principal.index');
     }
 
     /**

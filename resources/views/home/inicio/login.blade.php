@@ -1,5 +1,5 @@
 
-@extends('layouts.home')
+@extends('layouts.login')
 @section('content')
 <style>
 
@@ -37,13 +37,6 @@ body {
    */
 }
 
-    #particles {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      position: absolute;
-    }
-
 
 .login2
 {
@@ -55,6 +48,10 @@ body {
         <div class="card-panel z-depth-3">
         <div class="row">
         <div class="col s12">
+        <div class="center-align">
+                <img width="50" src="http://www.iconeasy.com/icon/ico/Sport/Dragon%20Ball%20Z/Dragon%20Radar.ico">   
+        </div>
+ 
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
                         {{ csrf_field() }}
 
@@ -98,7 +95,7 @@ body {
                         -->
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
-                                <button style="width:100%;" type="submit" class="btn btn-large blue waves-effect waves-light">
+                                <button style="width:100%;" type="submit" class="btn btn-large green waves-effect waves-light">
                                 ENTRAR <i class="fa fa-sign-in fa-3x"></i>
                                 </button>
 
@@ -119,6 +116,10 @@ body {
         <div class="card-panel z-depth-3">
         <div class="row">
         <div class="col s12">
+        <div class="center-align">
+                  <a href="{{ url('/') }}" class="brand-logo green-text lighten-2" style="font-family: 'Anton', sans-serif;letter-spacing: 0.2em">Login</a>
+    
+        </div>
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
                         {{ csrf_field() }}
 
@@ -162,7 +163,7 @@ body {
                         -->
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn blue waves-effect waves-light">
+                                <button type="submit" class="btn green waves-effect waves-light pull-right">
                                     Entrar <i class="fa fa-sign-in fa-2x"></i>
                                 </button>
 
@@ -177,12 +178,4 @@ body {
         </div>
     </div>
 </div>
-<script>
-$(document).ready(function(){
-    particleground(document.getElementById('particles'), {
-    dotColor: '#fff',
-    lineColor: '#fff'
-    });
-});
-</script>
 @endsection
