@@ -31,7 +31,10 @@ if [[ $1 ]] || [[ $2 ]] || [[ $3 ]]; then
 				fi
 				php artisan make:view $3 --extension=jade --extends=layouts.$1 --directory=resources/jade/$1/$2/ --section=content
 				# sudo php artisan make:view $3 --extends=layouts.$1 --directory=resources/views/$1/$2/ --section=content
-		    	gulp
+		    	#si se usa yarn
+		    	yarn gulp
+		    	#si se usa solo npm
+		    	#gulṕ
 		    	php artisan make:controller ${1^}/PrincipalController
 		    	php artisan make:controller ${1^}/${2^}Controller --resource
 		    	cd ..

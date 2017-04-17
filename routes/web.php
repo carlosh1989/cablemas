@@ -47,6 +47,7 @@ Route::group(['middlewareGroups' => 'web'], function () {
         // Rutas de REPUESTOS
         Route::get('/admin', 'admin\Principal@index');
         Route::get('/admin/home', 'AdminController@index');
+        Route::resource('admin/locatario', 'Admin\LocatarioController');
     });
 });
 Auth::routes();

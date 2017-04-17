@@ -1,0 +1,159 @@
+@extends('layouts.admin')
+style(type='text/css').
+	p{
+		text-align: justify;
+		color:#777;
+	}
+	.img {
+	    width: 100%;
+	    height: auto;
+	    margin-top: 50px;
+		vertical-align: middle;
+	}
+
+	.texto
+	{
+		color: #777;
+	}
+
+	.titulo
+	{
+		font-family: 'Anton', sans-serif;letter-spacing: 0.2em;
+	}
+@section('content')
+.container
+	form(action="{{ url('/admin/locatario') }}",method="POST")
+		{{ csrf_field() }}
+		.row
+			.col.l10.offset-l1.s12.m12
+				.card-panel
+						.row
+							
+							.col.l12.s12
+								h5.teal-text.center.animated.pulse.titulo.green-text Ingresando locatario
+						.row
+							.input-field.col.s12
+								input#razon.validate(type="text", name="razon_social")
+								label(for="razon" data-error="Ingrese un email valido" data-success="Correcto") Razon Social
+						.row
+							.input-field.col.s12
+								input#rif.validate(type="text",name="rif")
+								label(for="rif" data-error="Ingrese dato valido" data-success="Correcto") R.I.F.
+
+						.row
+							.input-field.col.s12
+								input#direccion.validate(type="text",name="direccion")
+								label(for="direccion" data-error="Ingrese dato valido" data-success="Correcto") Dirección
+
+						.row
+							.input-field.col.s12
+								input#responsable.validate(type="email",name="email")
+								label(for="responsableemail" data-error="Ingrese dato valido" data-success="Correcto") Email local
+
+						.row
+							.input-field.col.s12
+								input#telefono.validate(type="text",name="telefono")
+								label(for="telefono" data-error="Ingrese dato valido" data-success="Correcto") Telefono local
+						.row
+							.input-field.col.s12
+								input#servicios.validate(type="text",name="servicios")
+								label(for="servicios" data-error="Ingrese dato valido" data-success="Correcto") Servicios
+						.row
+							.input-field.col.s12
+								input#horarios.validate(type="text",name="horarios")
+								label(for="horarios" data-error="Ingrese dato valido" data-success="Correcto") Horarios
+
+
+						.row
+							.input-field.col.s12
+								input#redes.validate(type="text",name="redes_sociales")
+								label(for="redes" data-error="Ingrese dato valido" data-success="Correcto") Redes sociales
+
+						.row
+							.input-field.col.s12
+								select(name="forma_pago")
+									option(value="",required,disabled,selected) Formas de pago
+									option(value='1') Efectivo
+									option(value='2') Efectivo y Tarjeta de debito
+									option(value='3') Efectivo y Tarjeta de debito y credito
+									option(value='4') Efectivo y Tarjeta de credito
+									option(value='5') Todas las anteriores
+
+
+						.row
+							.input-field.col.s12
+								select(name="encargos")
+									option(value="",required,disabled,selected) Encargos
+									option(value='1') Si
+									option(value='0') No
+						.row
+							.input-field.col.s12
+								input#responsable.validate(type="text",name="responsable")
+								label(for="responsablenombre" data-error="Ingrese dato valido" data-success="Correcto") Responsable Nombre
+
+						.row
+							.input-field.col.s12
+								input#responsable.validate(type="text",name="responsable_telefono")
+								label(for="responsabletelefono" data-error="Ingrese dato valido" data-success="Correcto") Responsable Telefono
+
+						.row
+							.input-field.col.s12
+								input#responsable.validate(type="email",name="responsable_email")
+								label(for="responsableemail" data-error="Ingrese dato valido" data-success="Correcto") Responsable Email
+
+						.row
+							.input-field.col.s12
+								input.validate(type="password",id="password",name="password")
+								label(for="password" data-error="Ingrese dato valido" data-success="Correcto") Password
+
+						.row
+							.input-field.col.s12
+								input.validate(type="password",id="confirm_password")
+								label(for="confirm_password" data-error="El password no coincide" data-success="Correcto") Repita Password
+
+
+						.row
+							.input-field.col.s12
+								button.waves-effect.waves-light.green.btn-large.pull-right(type="submit") Guardar #[i.fa.fa-send]
+
+script(type='text/javascript').
+	$('.chips').material_chip();
+	$('.chips-initial').material_chip({
+	data: [{
+	tag: 'Apple',
+	}, {
+	tag: 'Microsoft',
+	}, {
+	tag: 'Google',
+	}],
+	});
+	$('.chips-placeholder').material_chip({
+	placeholder: 'Enter a tag',
+	secondaryPlaceholder: '+Tag',
+	});
+	$('.chips-autocomplete').material_chip({
+	autocompleteOptions: {
+	data: {
+	'Apple': null,
+	'Microsoft': null,
+	'Google': null
+	},
+	limit: Infinity,
+	minLength: 1
+	}
+	});
+
+	var password = document.getElementById("password")
+	, confirm_password = document.getElementById("confirm_password");
+
+	function validatePassword(){
+	if(password.value != confirm_password.value) {
+	confirm_password.setCustomValidity("Passwords Don't Match");
+	} else {
+	confirm_password.setCustomValidity('');
+	}
+	}
+
+	password.onchange = validatePassword;
+	confirm_password.onkeyup = validatePassword;
+@endsection

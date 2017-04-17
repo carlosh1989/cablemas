@@ -1,49 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <title>{{ config('app.name') }}</title>
-
     <!-- Styles -->
-    <link href="/css/app.css" rel="stylesheet">
-<link rel="stylesheet" href="{{url('bower/materialize/dist/css/materialize.min.css')}}"> 
-      <link rel="stylesheet" href="{{url('/bower/sweetalert/dist/sweetalert.css')}}">     
-   <link rel="stylesheet" href="{{url('bower/components-font-awesome/css/font-awesome.min.css')}}">
-   <link rel="stylesheet" href="{{url('bower/animate.css/animate.min.css')}}">
-        <!-- Fonts -->
-       <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-  <!-- <script src="{{url('bower/pusher.min/index.js')}}"></script>
- <script>
+    <link href="https://fonts.googleapis.com/css?family=Cantarell:400,700i" rel="stylesheet">
+    <link rel="stylesheet" href="{{url('bower/materialize/dist/css/materialize.min.css')}}">
+    <link rel="stylesheet" href="{{url('/bower/sweetalert/dist/sweetalert.css')}}">
+    <link rel="stylesheet" href="{{url('bower/components-font-awesome/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{url('bower/animate.css/animate.min.css')}}">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <script src="{{url('bower/pusher.min/index.js')}}"></script>
+    <script>
     // Enable pusher logging - don't include this in production
     Pusher.logToConsole = true;
     var pusher = new Pusher('5a6a7f37ae077a81c1d4', {
-      encrypted: true
+    encrypted: true
     });
     var channel = pusher.subscribe('test_channel');
     channel.bind('my_event', function(data) {
-      Materialize.toast(data.message, 4000);
+    Materialize.toast(data.message, 4000);
     });
-  </script> -->
+    </script> -->
     <!-- Scripts -->
     <script>
-        window.Laravel = <?php echo json_encode([
-            'csrfToken' => csrf_token(),
-        ]); ?>
+    window.Laravel = <?php echo json_encode([
+    'csrfToken' => csrf_token(),
+    ]); ?>
     </script>
     <style>
-      .autocomplete
-      {
-        z-index: 888;
-      }
+
+    body{
+      overflow-x: hidden;
+    }
+    .autocomplete
+    {
+    z-index: 888;
+    }
+    #particles {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    }
+    .login {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    padding: 0 20px;
+    width: 100%;
+    text-align: left;
+    }
+    .nav-white a
+    {
+    color: #444;
+    }
+    .lista
+    {
+    color:#444;
+    }
+    .dropdown-content {
+    min-width: 0;
+    min-height: 0;
+    overflow: visible !important;
+    }
+    .secondDropDown {
+    /*adjust by your needs*/
+    margin-left: 124px !important;
+    margin-top: -50px !important;
+    }
+    #lista2 {
+    counter-reset: li;
+    list-style: none;
+    *list-style: decimal;
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    }
+    #lista2 ol {
+    margin: 0 0 0 2em;
+    }
+    #lista2 li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    color: #777;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;
+    }
+    #lista2 li:hover{
+    background: #eee;
+    }
+    #lista2 li:before{
+    content: counter(li);
+    counter-increment: li;
+    color: #fff;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #777;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+    }
+
     </style>
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  </head>
 <body>
 <script type="text/javascript" src="{{asset('/bower/jquery/dist/jquery.min.js')}}"></script>
 <script src="{{asset('/bower/sweetalert/dist/sweetalert.min.js')}}"></script>
@@ -54,24 +132,71 @@
 <ul id="dropdown1" class="dropdown-content">
   <li><a class="teal-text" href="{{ url('/logout') }}"><i class="fa fa-sign-out" aria-hidden="true"></i> Salir</a></li>
 </ul>
-<nav>
-  <div class="nav-wrapper teal">
-    <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
-    <a href="{{ url('/')}}" class="brand-logo"> Admin</a>
+
+ <div class="navbar-fixed">
+      <nav class="white nav-white">
+        <div class="nav-wrapper">
+          <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+          <a href="{{ url('/') }}" class="brand-logo green-text lighten-2" style="font-family: 'Anton', sans-serif;letter-spacing: 0.2em"><img width="50" src="http://www.iconeasy.com/icon/ico/Sport/Dragon%20Ball%20Z/Dragon%20Radar.ico">RECARLINE</a>
     <ul class="right hide-on-med-and-down">
+
+    
+            <li><a class="dropdown-button" href="#!" data-activates="serviciosSubmenu1"><i class="fa fa-building-o"></i>  LOCATARIO<i class="material-icons right">arrow_drop_down</i></a></li>
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-button" href="#!" data-activates="serviciosClientesSubmenu1"><i class="fa fa-address-card"></i> PROMOTOR<i class="material-icons right">arrow_drop_down</i></a></li>
+
+            <li><a class="dropdown-button" href="#!" data-activates="serviciosClientesSubmenu1"><i class="fa fa-address-card"></i> TALLERES<i class="material-icons right">arrow_drop_down</i></a></li>
+
+
+
          @if (Auth::guest())
             <li><a href="{{ url('/login') }}">Login</a></li>
             <li><a href="{{ url('/register') }}">Register</a></li>
          @else
       <!-- Dropdown Trigger -->
-      <li><a class="fa fa-search fa-2x" href="#" id="mostrarBusqueda"></a></li>
-      <li><a class="dropdown-button" href="#" data-activates="dropdown1"> {{ Auth::user()->email }}<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a class="dropdown-button green-text truncate" href="#" data-activates="menuLog"><i class="fa fa-user fa-2x green-text"></i> {{ Auth::user()->email }}</a></li>
          @endif
     
     </ul>
+        </div>
+      </nav>
   </div>
-</nav>
+        
 
+      <!-- Dropdown Structure -->
+      <ul id="dropdown1" class="dropdown-content lista">
+        <li><a style="color:#444;" href="#!"><i class="fa fa-user-plus fa-1x"></i> REGISTRA TU PAGO</a></li>
+        <li><a style="color:#444;" href="#!">SOLICITUD DE SERVICIO RESIDENCIAL</a></li>
+        <li><a class='dropdown-button2 d' href='#' data-activates='dropdown2' data-hover="hover" data-alignment="left">PREGUNTAS FRECUENTES</a></li>
+      </ul>
+      <ul id="serviciosSubmenu1ASDSA" class="dropdown-content lista">
+        <li><a href="#!"><i class="fa fa-user-plus fa-1x"></i> INTERNET RESIDENCIAL</a></li>
+        <li class="divider"></li>
+        <li><a href="#!"> INTERNET COMERCIAL</a></li>
+        <li><a style="color:#444;" href="#!"> INTERNET COMERCIAL</a></li>
+        <li class="divider"></li>
+        <li><a href="#!"> INTERNET DEDICADO</a></li>
+      </ul>
+      <ul id="serviciosClientesSubmenu2" class="dropdown-content lista">
+        <li><a style="color:#444;" href="{{ url('/registroPago') }}"><i class="fa fa-user-plus fa-1x"></i> REGISTRA TU PAGO</a></li>
+        <li><a style="color:#444;" href="{{ url('/solicitudServicio') }}">SOLICITUD DE SERVICIO RESIDENCIAL</a></li>
+        <li><a style="color:#444;" href="{{ url('/preguntasFrecuentes') }}">PREGUNTAS FRECUENTES</a></li>
+      </ul>
+      <!-- Dropdown Structure -->
+      <ul id='serviciosSubmenu1' class='dropdown-content'>
+        <li><a style="color:#444;" href="{{ url('/residencial') }}">INGRESAR</a></li>
+        <li><a style="color:#444;" href="#!" class="dropdown-button" href="#!" data-activates="internetComercial">SMS</a></li>
+        <li><a style="color:#444;" href="{{ url('/dedicado') }}">RESET PASSWORD</a></li>
+      </ul>
+      <ul id='internetComercial' class='dropdown-content secondDropDown'>
+        <li><a class="truncate green-text" href="{{ url('/empresarial') }}">MASIVO</a></li>
+        <li><a class="truncate green-text" href="{{ url('/telefoniaip') }}">PARTICULAR</a></li>
+      </ul>
+
+      <ul id="menuLog" class="dropdown-content lista">
+        <li><a style="color:#444;" href="#!"><i class="fa fa-cog" aria-hidden="true"></i> Configuración</a></li>
+        <li><a  class='dropdown-button2 green-text d' href="{{ url('/logout') }}" data-activates='dropdown2' data-hover="hover" data-alignment="left"> <i class="fa fa-external-link-square" aria-hidden="true"></i> SALIR</a></li>
+      </ul>
 
 
     <ul id="slide-out" class="side-nav">

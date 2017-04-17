@@ -1,4 +1,25 @@
 @extends('layouts.admin')
+style(type='text/css').
+	p{
+		text-align: justify;
+		color:#777;
+	}
+	.img {
+	    width: 100%;
+	    height: auto;
+	    margin-top: 50px;
+		vertical-align: middle;
+	}
+
+	.texto
+	{
+		color: #777;
+	}
+
+	.titulo
+	{
+		font-family: 'Anton', sans-serif;letter-spacing: 0.2em;
+	}
 
 @section('content')
 .container
@@ -6,7 +27,7 @@
 	.card-panel
 		.row
 			.col.l12.s12
-				h5.teal-text.center.animated.pulse Inicio
+				h5.teal-text.center.animated.pulse.titulo.green-text Admin
 		.divider
 		.row
 			.col.s12
