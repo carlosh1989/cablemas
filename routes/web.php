@@ -39,9 +39,10 @@ Route::group(['middlewareGroups' => 'web'], function () {
         // All routes you put here can be accessible to all authenticated users
         Route::get('/cliente', 'ClienteController@index');
     });
-    Route::group(['middleware' => ['auth', 'role:local']], function () {
+    Route::group(['middleware' => ['auth', 'role:locatario']], function () {
         // All routes you put here can be accessible to all authenticated users
-        Route::get('/local', 'LocalController@index');
+        Route::get('/locatario', 'Locatario\PrincipalController@index');
+        Route::resource('/locatario/repuesto', 'Locatario\RepuestoController');
     });
     Route::group(['middleware' => ['auth', 'role:admin']], function () {
         // Rutas de REPUESTOS

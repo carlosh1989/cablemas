@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+@extends('layouts.locatario')
 <style type="text/css">
   p{
   	text-align: justify;

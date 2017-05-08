@@ -24,13 +24,13 @@ style(type='text/css').
 .container
 	form(action="{{ url('/admin/locatario') }}",method="POST")
 		{{ csrf_field() }}
+		br
 		.row
 			.col.l10.offset-l1.s12.m12
-				.card-panel
+				.card-panel.z-depth-4
 						.row
-							
 							.col.l12.s12
-								h5.teal-text.center.animated.pulse.titulo.green-text Ingresando locatario
+								h5.red-text.center.animated.pulse.titulo Ingresando locatario
 						.row
 							.input-field.col.s12
 								input#razon.validate(type="text", name="razon_social")
@@ -71,7 +71,7 @@ style(type='text/css').
 
 						.row
 							.input-field.col.s12
-								select(name="forma_pago")
+								select.validate(name="forma_pago")
 									option(value="",required,disabled,selected) Formas de pago
 									option(value='1') Efectivo
 									option(value='2') Efectivo y Tarjeta de debito

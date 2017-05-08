@@ -1,0 +1,118 @@
+@extends('layouts.locatario')
+style(type='text/css').
+	p{
+		text-align: justify;
+		color:#777;
+	}
+	.img {
+	    width: 100%;
+	    height: auto;
+	    margin-top: 50px;
+		vertical-align: middle;
+	}
+
+	.texto
+	{
+		color: #777;
+	}
+
+	.titulo
+	{
+		font-family: 'Anton', sans-serif;letter-spacing: 0.2em;
+	}
+@section('content')
+.container
+	form(action="{{ url('/locatario/repuesto') }}",method="POST")
+		{{ csrf_field() }}
+		br
+		.row
+			.col.l10.offset-l1.s12.m12
+				.card-panel.z-depth-4
+						.row
+							.col.l12.s12
+								h5.grey-text.center.animated.pulse.titulo Ingresando Repuestos
+						.row
+							.input-field.col.s12
+								input#razon.validate(type="text", name="nombre")
+								label(for="razon" data-error="Ingrese un email valido" data-success="Correcto") Nombre repuesto
+						.row
+							.input-field.col.s12
+								input#rif.validate(type="text",name="descripcion")
+								label(for="rif" data-error="Ingrese dato valido" data-success="Correcto") Descripción
+
+						.row
+							.input-field.col.s12
+								input#responsable.validate(type="text",name="modelo")
+								label(for="responsableemail" data-error="Ingrese dato valido" data-success="Correcto") Modelo
+
+						.row
+							.input-field.col.s12
+								input#telefono.validate(type="number",name="ano")
+								label(for="telefono" data-error="Ingrese dato valido" data-success="Correcto") Año
+
+						.row
+							.input-field.col.s12
+								select.validate(name="marca_id")
+									option(value="",required,disabled,selected) Seleccione Marca
+									@foreach($marcas as $m)
+									@var('id_marca',$m->id)
+									option(value="{{$id_marca}}",required)  {{$m->marca}}
+									@endforeach
+
+						.row
+							.input-field.col.s12
+								select.validate(name="categoria_id")
+									option(value="",required,disabled,selected) Categorias
+									@foreach($categorias as $c)
+									@var('id_categoria',$c->id)
+									option(value="{{$id_categoria}}",required)  {{$c->categoria}}
+									@endforeach
+
+						.row
+							.input-field.col.s12
+								button.waves-effect.waves-light.green.btn-large.pull-right(type="submit") Guardar #[i.fa.fa-send]
+
+script(type='text/javascript').
+	$('.chips').material_chip();
+	$('.chips-initial').material_chip({
+	data: [{
+	tag: 'Apple',
+	}, {
+	tag: 'Microsoft',
+	}, {
+	tag: 'Google',
+	}],
+	});
+	$('.chips-placeholder').material_chip({
+	placeholder: 'Enter a tag',
+	secondaryPlaceholder: '+Tag',
+	});
+	$('.chips-autocomplete').material_chip({
+	autocompleteOptions: {
+	data: {
+	'Apple': null,
+	'Microsoft': null,
+	'Google': null
+	},
+	limit: Infinity,
+	minLength: 1
+	}
+	});
+
+	var password = document.getElementById("password")
+	, confirm_password = document.getElementById("confirm_password");
+
+	function validatePassword(){
+	if(password.value != confirm_password.value) {
+	confirm_password.setCustomValidity("Passwords Don't Match");
+	} else {
+	confirm_password.setCustomValidity('');
+	}
+	}
+
+	password.onchange = validatePassword;
+	confirm_password.onkeyup = validatePassword;
+
+
+
+@endsection
