@@ -12,14 +12,15 @@ script(type='text/javascript').
 	console.log(JSON.stringify(result.filesUploaded[0].url));
 	var _token = $('input[name="_token"]').val();
 	urlimagen = JSON.stringify(result.filesUploaded[0].url);
+	handleimagen = JSON.stringify(result.filesUploaded[0].handle);
 	$.ajax({
 	url     :  "{{url('locatario/imagen')}}",
 	type    :  'post',
 	dataType:  'json',
-	data    :   {urlimagen: urlimagen, _token: _token},
+	data    :   {urlimagen: urlimagen, handleimagen: handleimagen, _token: _token},
 	success :   function (data) {
-	alert(data.mensaje);
 	console.log(JSON.stringify(data));
+	alert(data.urlimagen);
 	},
 	error   :   function() {
 	alert('error');

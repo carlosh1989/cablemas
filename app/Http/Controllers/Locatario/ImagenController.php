@@ -44,8 +44,8 @@ class ImagenController extends Controller
 
         if ($request->ajax()) {
             return response()->json([
-                'id' => 'asd',
-                'message' => 'asdasd'
+                'urlimagen' => $request->urlimagen,
+                'handleimagen' => $request->handleimagen,
             ]);
         }
     }
