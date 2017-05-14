@@ -79,10 +79,12 @@ class RepuestoController extends Controller
             'stock'   => 1,
         ]);
 
+        $id_repuesto = $create->id;
         //dd($create);
-
-        Alert::success('Repuesto agregado con exito..!')->autoclose(3000);
-        return Redirect::to('/locatario/repuesto/create');
+        echo $id_repuesto;
+        Session::set('repuestoID', $id_repuesto);
+        Alert::success('Datos de repuesto agregados ahora ingrese imagen..!')->autoclose(3000);
+        return Redirect::to('/locatario/imagen/create');
     }
 
     /**

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{url('bower/materialize/dist/css/materialize.min.css')}}">
     <link rel="stylesheet" href="{{url('/bower/sweetalert/dist/sweetalert.css')}}">
     <link rel="stylesheet" href="{{url('bower/components-font-awesome/css/font-awesome.min.css')}}">
-    <link rel="stylesheet" href="{{url('bower/animate.css/animate.min.css')}}">
+   <!-- <link rel="stylesheet" href="{{url('bower/animate.css/animate.min.css')}}"> -->
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -228,7 +228,7 @@
       </form>
     </div>
   </nav>
-
+<meta name="csrf-token" content="{{ csrf_token() }}">
 
         @yield('content')
  @include('sweet::alert')
