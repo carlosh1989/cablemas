@@ -42,9 +42,9 @@ Route::group(['middlewareGroups' => 'web'], function () {
     Route::group(['middleware' => ['auth', 'role:locatario']], function () {
         // All routes you put here can be accessible to all authenticated users
         Route::get('/locatario', 'Locatario\PrincipalController@index');
+        Route::get('/locatario/guardar', 'Locatario\PrincipalController@guardar');
         Route::resource('/locatario/repuesto', 'Locatario\RepuestoController');
         Route::resource('/locatario/imagen', 'Locatario\ImagenController');
-        Route::post('/locatario/imagen/guardar', 'Locatario\ImagenController@guardar');
     });
     Route::group(['middleware' => ['auth', 'role:admin']], function () {
         // Rutas de REPUESTOS

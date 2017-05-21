@@ -15,7 +15,8 @@
         "jenssegers/date": "^3.2",
         "guzzlehttp/guzzle": "^6.2",
         "sendgrid/sendgrid": "~5.1",
-        "nwidart/laravel-modules": "^1.19"
+        "nwidart/laravel-modules": "^1.19",
+        "cloudinary/cloudinary_php": "^1.8"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -24,8 +25,7 @@
         "symfony/css-selector": "3.1.*",
         "symfony/dom-crawler": "3.1.*",
         "maddhatter/laravel-view-generator": "dev-master",
-        "uxweb/sweet-alert": "~1.1",
-        "cloudinary/cloudinary_php": "dev-master"
+        "uxweb/sweet-alert": "~1.1"
 },
     "autoload": {
         "classmap": [

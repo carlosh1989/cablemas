@@ -20,7 +20,7 @@
   data    :   {urlimagen: urlimagen, handleimagen: handleimagen, _token: _token},
   success :   function (data) {
   console.log(JSON.stringify(data));
-  alert(data.urlimagen);
+  alert(data.handleimagen);
   },
   error   :   function() {
   alert('error');
