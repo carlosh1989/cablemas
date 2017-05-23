@@ -50,7 +50,7 @@ class ImagenController extends Controller
         $imagen_original = (object) \Cloudinary\Uploader::upload($url);
 
         //echo "original: ".$imagen_original->url;
-        //echo "<hr>";
+        //echo  "<hr>";
         $imagen_grande = (object) \Cloudinary\Uploader::upload("http://recarline.imagefly.io/w_1200,q_50/".$imagen_original->url."");
         //echo "grande: ".$imagen_grande->url;
 
