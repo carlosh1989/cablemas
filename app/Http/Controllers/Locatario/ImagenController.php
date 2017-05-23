@@ -26,7 +26,8 @@ class ImagenController extends Controller
      */
     public function create()
     {
-        return view('locatario/imagen/create');
+        $imagenes = Imagen::all();
+        return view('locatario/imagen/create',compact('imagenes'));
     }
 
     /**
@@ -50,12 +51,12 @@ class ImagenController extends Controller
 
         //echo "original: ".$imagen_original->url;
         //echo "<hr>";
-        $imagen_grande = (object) \Cloudinary\Uploader::upload("http://recarline.imagefly.io/q_50/".$imagen_original->url."");
+        $imagen_grande = (object) \Cloudinary\Uploader::upload("http://recarline.imagefly.io/w_1200,q_50/".$imagen_original->url."");
         //echo "grande: ".$imagen_grande->url;
 
-       $imagen_medio = (object) \Cloudinary\Uploader::upload("http://recarline.imagefly.io/w_128,h_128,q_65/".$imagen_grande->url."");
+       $imagen_medio = (object) \Cloudinary\Uploader::upload("http://recarline.imagefly.io/w_300,h_300,q_65/".$imagen_grande->url."");
 
-        $imagen_miniatura = (object) \Cloudinary\Uploader::upload("http://recarline.imagefly.io/w_300,h_300,q_65/".$imagen_grande->url."");
+        $imagen_miniatura = (object) \Cloudinary\Uploader::upload("http://recarline.imagefly.io/w_128,h_128,q_65/".$imagen_grande->url."");
         //echo "<hr>";
         //echo "miniatura: ".$imagen_miniatura->url;
 

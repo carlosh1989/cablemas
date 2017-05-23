@@ -39,4 +39,11 @@ script(type='text/javascript').
 					.row
 						.input-field.col.s12
 							input.btn.red(type="button" value="Buscar Imagen" onclick="showPicker()")
+
+					.row
+						@foreach($imagenes as $img)
+						.col.s12.m4.l4
+							@var('urlImagen',$img->imagen_grande)
+							img.responsive-img.z-depth-2.materialboxed(src="{{$urlImagen}}")
+						@endforeach
 @endsection

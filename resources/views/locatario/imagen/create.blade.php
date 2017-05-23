@@ -43,6 +43,9 @@
             <input type="button" value="Buscar Imagen" onclick="showPicker()" class="btn red"/>
           </div>
         </div>
+        <div class="row">@foreach($imagenes as $img)
+          <div class="col s12 m4 l4">@var('urlImagen',$img->imagen_grande)<img src="{{$urlImagen}}" class="responsive-img z-depth-2 materialboxed"/></div>@endforeach
+        </div>
       </div>
     </div>
   </div>
