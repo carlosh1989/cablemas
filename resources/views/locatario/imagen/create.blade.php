@@ -44,7 +44,10 @@
           </div>
         </div>
         <div class="row">@foreach($imagenes as $img)
-          <div class="col s12 m4 l4">@var('urlImagen',$img->imagen_grande)<img src="{{$urlImagen}}" class="responsive-img z-depth-2 materialboxed"/></div>@endforeach
+          <div class="col s12 m4 l4">
+            @var('imagenMedio',$img->imagen_medio)
+            @var('imagenGrande',$img->imagen_grande)<a href="{{$imagenGrande}}" data-lightbox="image-1"><img src="{{$imagenMedio}}" class="responsive-img z-depth-2"/></a>
+          </div>@endforeach
         </div>
       </div>
     </div>

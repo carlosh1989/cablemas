@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{url('bower/materialize/dist/css/materialize.min.css')}}">
     <link rel="stylesheet" href="{{url('/bower/sweetalert/dist/sweetalert.css')}}">
     <link rel="stylesheet" href="{{url('bower/components-font-awesome/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{url('/bower/lightbox2/dist/css/lightbox.min.css')}}">
    <!-- <link rel="stylesheet" href="{{url('bower/animate.css/animate.min.css')}}"> -->
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -126,6 +127,8 @@
 <script type="text/javascript" src="{{asset('/bower/jquery/dist/jquery.min.js')}}"></script>
 <script src="{{asset('/bower/sweetalert/dist/sweetalert.min.js')}}"></script>
 <script src="{{asset('/bower/materialize/dist/js/materialize.min.js')}}"></script>
+<script src="{{asset('/bower/lightbox2/dist/js/lightbox.min.js')}}"></script>
+
     <div id="app">
        
 <!-- Dropdown Structure -->

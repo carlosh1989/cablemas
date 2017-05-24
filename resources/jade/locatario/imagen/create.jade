@@ -43,7 +43,9 @@ script(type='text/javascript').
 					.row
 						@foreach($imagenes as $img)
 						.col.s12.m4.l4
-							@var('urlImagen',$img->imagen_grande)
-							img.responsive-img.z-depth-2.materialboxed(src="{{$urlImagen}}")
+							@var('imagenMedio',$img->imagen_medio)
+							@var('imagenGrande',$img->imagen_grande)
+							a(href="{{$imagenGrande}}" data-lightbox="image-1")
+								img.responsive-img.z-depth-2(src="{{$imagenMedio}}")
 						@endforeach
 @endsection
